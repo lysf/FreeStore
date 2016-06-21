@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/snailpay_one_text"
+    android:layout_width="82dp"
+    android:layout_height="82dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:textSize="14sp"
+    android:gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="false" />

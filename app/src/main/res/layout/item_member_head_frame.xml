@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:background="@drawable/member_center_grid_item_selector"
+    android:orientation="vertical">
+
+    <com.snailgame.cjg.common.widget.FSSimpleImageView
+        android:id="@+id/siv_level_icon"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="center"
+        fresco:placeholderImage="@drawable/pic_ragle_loading"
+        fresco:placeholderImageScaleType="fitXY"/>
+
+
+    <TextView
+        android:id="@+id/tv_level_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/primary_text_color"
+        android:singleLine="true"/>
+</RelativeLayout>

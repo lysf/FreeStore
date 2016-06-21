@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<third.BottomSheet.ClosableSlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/view_cotainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/common_window_bg"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_score_header"
+                android:textColor="@color/general_text_color"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/tv_comment_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/comment_text"
+                android:textSize="@dimen/text_size_normal" />
+
+            <RatingBar
+                android:id="@+id/rb_comment"
+                style="@style/ratingBarGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="0.1" />
+
+            <TextView
+                android:id="@+id/tv_total_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/comment_text"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_score_foot"
+                android:textColor="@color/general_text_color"
+                android:textSize="@dimen/text_size_normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/list_selector_line" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/comment_dialog_rating_title"
+            android:textColor="@color/general_text_color"
+            android:textSize="@dimen/text_size_big" />
+
+
+        <RatingBar
+            android:id="@+id/rb_commit_level"
+            style="@style/ratingBarBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1" />
+
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/comment_input_bg"
+            android:focusable="true"
+            android:hint="@string/comment_dialog_edit_hint"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textColorHint="@color/general_text_color"
+            android:textCursorDrawable="@drawable/ic_cursor"
+            android:textSize="@dimen/text_size_normal" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="166dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_scan_ok_selector"
+            android:gravity="center"
+            android:text="@string/feedback_commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+    </LinearLayout>
+</third.BottomSheet.ClosableSlidingLayout>

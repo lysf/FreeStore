@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/app_icon"
+        layout="@layout/simple_image_normal_overlay"
+        android:layout_width="@dimen/play_item_app_logo"
+        android:layout_height="@dimen/play_item_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:focusable="false"
+        android:scaleType="fitXY" />
+
+
+    <include
+        android:id="@+id/app_icon_label"
+        layout="@layout/simple_image"
+        android:layout_width="@dimen/app_logo_label_size"
+        android:layout_height="@dimen/app_logo_label_size"
+        android:layout_alignRight="@+id/app_icon"
+        android:layout_alignTop="@+id/app_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal_p" />
+
+    <TextView
+        android:id="@+id/app_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:singleLine="true"
+        android:textColor="@color/second_text_color"
+        android:textSize="@dimen/text_size_small" />
+
+    <include
+        layout="@layout/rank_download_btn_container"
+        android:layout_width="@dimen/download_btn_width"
+        android:layout_height="@dimen/download_btn_height"
+        android:layout_below="@+id/app_size"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_18dp"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/game_addition_Container" />
+</RelativeLayout>

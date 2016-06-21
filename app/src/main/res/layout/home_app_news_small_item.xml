@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:id="@+id/app_news_container"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/list_item_selector"
+             android:descendantFocusability="blocksDescendants"
+             android:minHeight="115dp"
+             android:orientation="vertical"
+             android:paddingLeft="16dp"
+             android:paddingRight="16dp">
+
+    <include
+        android:id="@+id/app_news_icon"
+        layout="@layout/simple_image_normal_roundcorner"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="@dimen/common_item_layout_margin"
+        android:layout_marginTop="@dimen/common_item_layout_margin"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/app_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="@dimen/inner_item_layout_margin_top"
+        android:singleLine="true"
+        android:textColor="@color/primary_text_color"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/app_news_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/inner_item_layout_margin_top"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="112dp"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="2"
+        android:textColor="@color/general_text_color"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/app_news_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/translucent_15_black"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/divider_height"
+        />
+
+</FrameLayout>

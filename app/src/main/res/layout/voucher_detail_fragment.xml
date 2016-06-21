@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <com.snailgame.cjg.common.widget.CustomLoadingView
+        android:id="@+id/detailLoadingGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/common_window_bg"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <com.snailgame.cjg.common.widget.LoadMoreListView
+        android:id="@+id/voucher_cooper_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:fadingEdge="none"
+        android:dividerHeight="1px"
+        android:clickable="false"
+        android:divider="@color/common_line_color"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:focusable="false" />
+
+</RelativeLayout>

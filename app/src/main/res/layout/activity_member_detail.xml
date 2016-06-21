@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.snailgame.cjg.member.widget.RLScrollView
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_window_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/member_detail_header_height"
+                android:gravity="center_horizontal">
+
+                <com.snailgame.cjg.common.widget.FSSimpleImageView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/siv_privilege_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    fresco:placeholderImage="@drawable/member_privilege_bg"
+                    fresco:placeholderImageScaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tv_privilege_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@color/translucent_70_white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_privilege_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_privilege_level"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="6dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <include
+                    android:id="@+id/siv_privilege_icon"
+                    layout="@layout/simple_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_above="@id/tv_privilege_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="12dp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dimen_16dp"
+                android:paddingTop="@dimen/dimen_20dp"
+                android:text="@string/member_introduce"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_privilege_introuduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dimen_12dp"
+                android:paddingLeft="@dimen/dimen_16dp"
+                android:paddingRight="@dimen/dimen_16dp"
+                android:paddingTop="8dp"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/primary_text_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/item_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_8dp">
+
+                <com.snailgame.cjg.personal.widget.FullListView
+                    android:id="@+id/lv_level_privilege"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:dividerHeight="1px"
+                    android:divider="@color/common_line_color"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8dp"
+                android:background="@color/common_window_bg" />
+        </LinearLayout>
+    </com.snailgame.cjg.member.widget.RLScrollView>
+
+    <include
+        layout="@layout/actionbar_member_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_72dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="@dimen/bottom_btn_state_download_width"
+            android:layout_height="@dimen/bottom_btn_state_download_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_green_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/member_copy_customer_number"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_btn_state_download_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>
+
+
+
+
+

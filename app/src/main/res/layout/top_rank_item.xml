@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen_8dp"
+    android:layout_weight="1"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_18dp">
+
+
+    <include
+        android:id="@+id/rank_app_icon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="@dimen/item_app_logo"
+        android:layout_height="@dimen/item_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_18dp" />
+
+
+    <TextView
+        android:id="@+id/rank_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rank_app_icon"
+        android:layout_below="@id/rank_app_icon"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:ellipsize="end"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RatingBar
+        android:id="@+id/rank_app_rate"
+        style="@style/ratingBarGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rank_app_icon"
+        android:layout_below="@id/rank_app_title"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/no_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rank_app_icon"
+        android:layout_below="@id/rank_app_title"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:textColor="@color/second_text_color"
+        android:textSize="12sp" />
+
+    <include
+        layout="@layout/rank_download_btn_container"
+        android:layout_width="@dimen/download_btn_width"
+        android:layout_height="@dimen/download_btn_height"
+        android:layout_below="@id/rank_app_rate"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_16dp" />
+
+</RelativeLayout>

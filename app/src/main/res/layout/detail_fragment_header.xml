@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/broadcast_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/dimen_4dp"
+        android:paddingLeft="@dimen/dimen_32dp"
+        android:paddingRight="@dimen/dimen_32dp"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:textColor="@color/primary_text_color"
+        android:textColorLink="@color/btn_green_normal"
+        android:textSize="@dimen/text_size_normal" />
+
+    <LinearLayout
+        android:id="@+id/tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_10dp"></LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layoutDetailImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+
+    <com.snailgame.cjg.common.widget.ExpandableTextView
+        android:id="@+id/upgrade_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_16dp"
+        android:paddingTop="@dimen/dimen_16dp"
+        expandableTextView:maxCollapsedLines="4">
+
+        <TextView
+            android:id="@id/second_expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingRight="@dimen/dimen_16dp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/second_expandable_text"
+            android:layout_alignRight="@+id/second_expandable_text"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+    </com.snailgame.cjg.common.widget.ExpandableTextView>
+
+
+    <LinearLayout
+        android:id="@+id/layout_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:text="@string/app_des"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/translucent_15_black" />
+
+        <com.snailgame.cjg.common.widget.ExpandableTextView
+            android:id="@+id/game_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_16dp"
+            expandableTextView:maxCollapsedLines="4">
+
+            <TextView
+                android:id="@+id/second_expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6dp"
+                android:paddingLeft="@dimen/dimen_16dp"
+                android:paddingRight="@dimen/dimen_16dp"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/second_expandable_text"
+                android:layout_alignRight="@+id/second_expandable_text"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:background="@android:color/transparent"
+                android:visibility="invisible" />
+        </com.snailgame.cjg.common.widget.ExpandableTextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/insteadChargeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:background="@drawable/ic_instead_charge_bg"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/instead_charge_icon_boder"
+            android:layout_width="38dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_12dp"
+            android:background="@drawable/red_boder" />
+
+        <ImageView
+            android:id="@+id/instead_charge_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_14dp"
+            android:layout_marginRight="@dimen/dimen_12dp"
+            android:src="@drawable/voucher_cooper_header_ic" />
+
+        <TextView
+            android:id="@+id/charge_btn"
+            android:layout_width="@dimen/download_btn_width"
+            android:layout_height="@dimen/download_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_32dp"
+            android:layout_marginRight="@dimen/dimen_12dp"
+            android:background="@drawable/btn_green_selector"
+            android:gravity="center"
+            android:text="@string/personal_currency_charge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/charge_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_toLeftOf="@id/charge_btn"
+            android:layout_toRightOf="@id/instead_charge_icon_boder"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/charge_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/charge_title"
+            android:layout_toLeftOf="@id/charge_btn"
+            android:layout_toRightOf="@id/instead_charge_icon_boder"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/second_text_color"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/recommend_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_16dp"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingRight="@dimen/dimen_16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_48dp"
+            android:gravity="center"
+            android:text="@string/recommend"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/translucent_15_black" />
+
+        <LinearLayout
+            android:id="@+id/layout_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/phone_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/list_item_selector"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingRight="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/img_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/detail_phone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal_p" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:drawableRight="@drawable/ic_more"
+            android:gravity="center_vertical"
+            android:textColor="@color/general_text_color" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:background="@color/translucent_15_black" />
+
+    <FrameLayout
+        android:id="@+id/feedback_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/list_item_selector"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingRight="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/ic_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/detail_feedback"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal_p" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/ic_more" />
+    </FrameLayout>
+</LinearLayout>

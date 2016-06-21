@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:background="@color/common_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <include
+            android:id="@+id/iv_photo"
+            layout="@layout/simple_avatar_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_ignore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/tv_phone_number"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/ic_flow_free_ignore" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phone_number"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:text="@string/flow_open_guide"
+                android:textColor="@color/voucher_detail_item_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="44dp"
+            android:background="@color/common_line_color" />
+
+        <TextView
+            android:id="@+id/tv_open_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ab_btn_selector"
+            android:drawablePadding="@dimen/dimen_12dp"
+            android:drawableRight="@drawable/ic_arrow_right_green"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:padding="14dp"
+            android:text="@string/flow_open_btn"
+            android:textColor="@color/btn_green_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_marginRight="@dimen/dimen_12dp"
+        android:background="@color/common_line_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_flow_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/flow_total_flow_title"
+                android:textColor="@color/voucher_detail_item_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_total_flow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_flow_header"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:background="@color/common_line_color" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_close_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/flow_close_time_title"
+                android:textColor="@color/voucher_detail_item_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_close_time_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:background="@color/common_line_color" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_open_time_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/flow_open_time_title"
+                android:textColor="@color/voucher_detail_item_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_open_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_open_time_header"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <include layout="@layout/common_horizontal_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:background="@color/common_line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="@string/flow_free_download"
+        android:textColor="@color/black" />
+
+    <include layout="@layout/common_horizontal_line" />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_friend_apply_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/friend_apply_title"
+                android:textColor="@color/general_text_color"
+                android:textSize="12sp" />
+
+            <com.snailgame.cjg.personal.widget.FullListView
+                android:id="@+id/lv_friend_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+
+            <TextView
+                android:id="@+id/tv_my_friend_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/friend_my_friend_title"
+                android:textColor="@color/general_text_color"
+                android:textSize="12sp" />
+
+            <com.snailgame.cjg.personal.widget.FullListView
+                android:id="@+id/lv_friend_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

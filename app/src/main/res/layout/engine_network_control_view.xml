@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_app_height"
+        tools:context="com.snail.trafficmonitor.ui.TrafficControlActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginLeft="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <CheckBox
+        android:id="@+id/wifi_ctrl"
+        android:button="@drawable/engine_cb_wifi_control"
+        android:background="@drawable/engine_cb_wifi_control"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/mobile_ctrl"
+        android:layout_toLeftOf="@id/wifi_ctrl"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/engine_cb_mobile_control"
+        android:button="@drawable/engine_cb_mobile_control"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/image"
+            android:layout_toLeftOf="@id/mobile_ctrl"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/title"
+                tools:text="Title"
+                android:singleLine="true"
+                android:ellipsize="end"
+                style="@style/MonitorText.18X00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:id="@+id/mobile_cost"
+                style="@style/MonitorText.14X00"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:background="#3f212121"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</RelativeLayout>

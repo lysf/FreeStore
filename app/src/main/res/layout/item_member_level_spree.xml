@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_20dp"
+    android:background="@drawable/member_center_grid_item_selector">
+
+    <include
+        android:id="@+id/siv_icon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="match_parent"
+        android:layout_height="84dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@color/primary_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textColor="@color/detail_upgrade"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_get"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/btn_green_selector"
+        android:gravity="center"
+        android:text="@string/not_get"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

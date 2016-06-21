@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/snail_resetpwd_account"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/snail_account"
+            android:textColor="@color/common_txt_color_1"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/cut_off_rule" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/snail_resetpwd_checkcode"
+                style="@android:style/Theme.Light"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/snail_please_input_check_code"
+                android:inputType="number|textPassword"
+                android:maxLength="6"
+                android:paddingLeft="16dp"
+                android:textColor="@color/common_txt_color_1"
+                android:textColorHint="@color/editor_tip_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/snail_resetpwd_getcode"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/common_green_btn_selector"
+                android:text="@string/snail_common_get_code"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/snail_resetpwd_getcode_timer"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@color/rank_bg_color"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:textColor="@color/view_pager_title_bg"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/cut_off_rule" />
+
+        <EditText
+            android:id="@+id/snail_resetpwd_pwd"
+            style="@android:style/Theme.Light"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/snail_pwd_new"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="16dp"
+            android:textColor="@color/common_txt_color_1"
+            android:textColorHint="@color/editor_tip_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/cut_off_rule" />
+
+        <EditText
+            android:id="@+id/snail_resetpwd_pwdagain"
+            style="@android:style/Theme.Light"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/snail_pwd_new_again"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="16dp"
+            android:textColor="@color/common_txt_color_1"
+            android:textColorHint="@color/editor_tip_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/snail_resetpwd_ok"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/common_green_btn_selector"
+        android:gravity="center"
+        android:text="@string/snail_submit"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal|bottom"
+        android:text="@string/snail_change_pwd_tips2"
+        android:textColor="@color/common_txt_color_2"
+        android:textSize="14sp" />
+
+</LinearLayout>

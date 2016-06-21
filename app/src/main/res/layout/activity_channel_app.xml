@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.snailgame.cjg.common.widget.CustomLoadingView
+        android:id="@+id/detailLoadingGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/common_window_bg"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <include
+            android:id="@+id/appinfo_icon"
+            layout="@layout/simple_image_normal"
+            android:layout_width="@dimen/detail_item_app_logo"
+            android:layout_height="@dimen/detail_item_app_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_110dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/appinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appinfo_icon"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/text_size_big" />
+
+        <RelativeLayout
+            android:id="@+id/rl_channel_app_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appinfo_title">
+
+            <include
+                android:id="@+id/view_channel_app_progress"
+                layout="@layout/view_channel_app_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_download_error"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:textSize="@dimen/text_size_little"
+                android:textColor="@color/red_light"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="@string/channel_app_download_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_install"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_32dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_below="@+id/tv_download_error"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_div"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@+id/rl_channel_app_progress"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_50dp"
+            android:background="@color/divider_color" />
+
+        <include
+            android:id="@+id/view_channel_app_gift"
+            layout="@layout/view_channel_gift_bag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_div"
+            android:visibility="gone" />
+
+        <ImageView
+            android:src="@drawable/iv_channel_app_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_16dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_channel_app_go_home"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@drawable/channel_app_circle_gray_shap_bg"
+        android:gravity="center"
+        android:text="@string/channel_app_in_home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_window_bg"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/detail_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/detailViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/detailHeaderView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/detail_game_header" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_height"
+                android:background="@color/white">
+
+                <com.snailgame.cjg.common.widget.PagerSlidingTabStrip
+                    xmlns:pslts="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/detailTabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    pslts:pstsIndicatorColor="@color/red"
+                    pslts:pstsIndicatorHeight="3dp"
+                    pslts:pstsShowDivider="false"
+                    pslts:pstsShowIndicatorBmp="false"
+                    pslts:pstsTitleDefaultColor="@color/general_text_color"
+                    pslts:pstsTitleSelColor="@color/red" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/common_line_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <com.snailgame.cjg.common.widget.CustomLoadingView
+        android:id="@+id/detailLoadingGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/common_window_bg"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/custom_actionbar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/detail_actionbar_color" />
+
+</FrameLayout>

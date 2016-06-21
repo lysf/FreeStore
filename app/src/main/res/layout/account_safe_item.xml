@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="48dp"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/iv_title_icon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/accountSafeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_title_icon"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/accountSafeSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/accountSafeTitle"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:paddingRight="32dp"
+        android:singleLine="true"
+        android:textColor="@color/score_wall_loading_color"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/accountSafeSubIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_more" />
+
+    <include
+        android:id="@+id/photo_view"
+        layout="@layout/simple_avatar_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="32dp"
+        android:visibility="gone" />
+</RelativeLayout>

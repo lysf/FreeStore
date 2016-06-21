@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_stick_hot_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/common_window_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/search_hot_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="@string/search_hot_title"
+        android:textColor="@color/search_history_hot_title_color"
+        android:textSize="@dimen/text_size_normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/change_search_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/search_btn_selector"
+            android:text="@string/chang_search_key"
+            android:padding="@dimen/dimen_4dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/change_search_key"
+            android:layout_toStartOf="@id/change_search_key"
+            android:background="@color/translucent_20_black" />
+
+    </RelativeLayout>
+</LinearLayout>

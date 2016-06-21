@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/member_center_header_height"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_member_center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_member" />
+
+            <TextView
+                android:id="@+id/tv_current_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_member_point"
+                android:textColor="@color/translucent_50_white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/iv_current_level_icon"
+            layout="@layout/simple_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/iv_next_level_icon"
+                layout="@layout/simple_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next_level"
+                android:textColor="@color/translucent_50_white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_upgrade_member_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="42dp"
+        android:gravity="center"
+        android:text="@string/member_center_tips"
+        android:textColor="@color/translucent_50_white"
+        android:textSize="10sp" />
+
+    <com.snailgame.cjg.common.widget.FSSimpleImageView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/overlay_img"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/member_center_header_height"
+        android:scaleType="fitXY"
+        fresco:overlayImage="@drawable/ab_btn_selector"
+        fresco:placeholderImage="@drawable/member_center_overlay"
+        fresco:placeholderImageScaleType="fitXY" />
+
+</FrameLayout>

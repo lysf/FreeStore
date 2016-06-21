@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expandable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_8dp"
+    android:paddingRight="@dimen/dimen_8dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/item_padding"
+                android:paddingRight="@dimen/item_padding"
+                android:paddingTop="@dimen/item_padding"
+                android:text="@string/dead_time"
+                android:textColor="@color/goods_subtitle_color"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/dead_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip"
+            android:background="@color/gray"
+
+            />
+
+        <TextView
+            android:id="@+id/good_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/item_padding"
+            android:paddingRight="@dimen/item_padding"
+            android:paddingTop="@dimen/item_padding"
+            android:textColor="@color/goods_subtitle_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip"
+            android:background="@color/gray"
+
+
+            />
+
+        <TextView
+            android:id="@+id/good_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/item_padding"
+            android:paddingRight="@dimen/item_padding"
+            android:paddingTop="@dimen/item_padding"
+            android:textColor="@color/goods_subtitle_color"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+</LinearLayout>

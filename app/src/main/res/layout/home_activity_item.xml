@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+              android:background="@color/white"
+                android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/common_item_layout_margin"
+        >
+
+        <include
+            layout="@layout/simple_image_normal_overlay_roundcorner"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dimen_8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        >
+        <include
+            layout="@layout/simple_image_normal_overlay_roundcorner"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:lineSpacingExtra="@dimen/dimen_8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/repeat_tab_bg"
+    android:paddingLeft="@dimen/bottom_layout_padding_left"
+    android:paddingRight="@dimen/bottom_layout_padding_right">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_21dp">
+
+        <TextView
+            android:id="@+id/appinfo_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/game_remove"
+            android:layout_width="@dimen/bottom_btn_state_download_width"
+            android:layout_height="@dimen/bottom_btn_state_download_height"
+            android:background="@drawable/btn_grey_selector"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/game_remove"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_btn_state_download_size"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/game_addition_Container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@id/download_state_download"
+                android:layout_width="@dimen/bottom_btn_state_download_width"
+                android:layout_height="@dimen/bottom_btn_state_download_height"
+                android:background="@drawable/btn_yellow_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/list_item_download"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/bottom_btn_state_download_size" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/btn_open_app"-->
+            <!--android:layout_width="@dimen/bottom_btn_state_download_width"-->
+            <!--android:layout_height="@dimen/bottom_btn_state_download_height"-->
+            <!--android:clickable="true"-->
+            <!--android:text="@string/list_item_open"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="@dimen/bottom_btn_state_download_size"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="@drawable/btn_blue_selector"-->
+            <!--android:visibility="gone"/>-->
+
+            <ProgressBar
+                android:id="@+id/pb_detail_download"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="@dimen/bottom_btn_state_download_width"
+                android:layout_height="@dimen/bottom_btn_state_download_height"
+                android:background="@drawable/detail_progress_bar_bg"
+                android:progressDrawable="@drawable/detail_progress_background" />
+
+            <TextView
+                android:id="@+id/tv_state_download"
+                android:layout_width="@dimen/bottom_btn_state_download_width"
+                android:layout_height="@dimen/bottom_btn_state_download_height"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/list_item_continue"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/bottom_btn_state_download_size"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/loading_for_btn"
+                android:layout_width="@dimen/bottom_btn_state_download_height"
+                android:layout_height="@dimen/bottom_btn_state_download_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/loading_for_btn_size"
+                android:layout_marginRight="@dimen/loading_for_btn_size"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_8dp"
+    android:paddingRight="@dimen/dimen_8dp">
+
+    <include
+        android:id="@+id/siv_friend_photo"
+        layout="@layout/simple_avatar_image_main"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/dimen_18dp" />
+
+    <TextView
+        android:id="@+id/tv_friend_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/primary_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_friend_game_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:text="@string/friend_play_game_title"
+        android:textColor="@color/friend_des_color"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_friend_game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/second_text_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_friend_add"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="@dimen/dimen_18dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/btn_green_selector"
+        android:gravity="center"
+        android:text="@string/friend_add"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+</LinearLayout>

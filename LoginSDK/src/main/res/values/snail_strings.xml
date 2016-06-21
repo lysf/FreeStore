@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 0:不开启，1:开启-->
+    <string name="snail_isonekeyDialog">0</string>
+    <string name="snail_dialogTitle_txing">提醒</string>
+    <string name="snail_sendmsg_notice">您即将发送短信来进行快速登录！</string>
+    
+    <string name="snail_guid1_text1">更多免流量</string>
+    <string name="snail_guid1_text2">支持三大运营商，全国地区免流量特权</string>
+ 
+    <string name="snail_guid2_text1">免卡网厅</string>
+    <string name="snail_guid2_text2">带来更多免卡，更有0元免卡等着你</string>
+    
+    <string name="snail_guid3_text1">下游戏赚话费</string>
+    <string name="snail_guid3_text2">动动手指话费轻松赚</string>
+    
+    <string name="snail_guid4_text1">全新体验</string>
+    <string name="snail_guid4_text2">界面/操作/内容全面升级</string>
+    
+    <string name="snail_prepare_pay">正在查询余额</string>
+    <string name="snail_prepare_pay_failed">查询余额失败</string>
+    <string name="snail_pay">您还剩余兔兔币%1$.2f个，是否要花费%2$.2f个购买？</string>
+    <string name="snail_pay_confirm">购买</string>
+    <string name="snail_pay_recharge">充值</string>
+    <string name="snail_logout">注销并退出</string>
+    <string name="snail_pay_bind_mobile">绑定手机</string>
+    <string name="snail_pay_recharge_confirm">确认充值</string>
+    <string name="snail_pay_cancel">取消</string>
+    <string name="snail_paying_tip">正在支付</string>
+    <string name="snail_quick_login">快速登录</string>
+    <string name="snail_open_free">开启免流量时代</string>
+    <string name="snail_quick_register">快速注册</string>
+    <string name="snail_quick_registertip">普通注册太麻烦？请使用一键注册吧！</string>
+    <string name="snail_phone_reg">手机号一键注册</string>
+    <string name="snail_sim_login">您的默认登陆账号不是当前手机号，使用当前手机号登录请勾选</string>
+    <string name="snail_common_login">账号登录>></string>
+    <string name="snail_tips">你的流量我买单</string>
+    <string name="snail_tips_2">你的流量我买单</string>
+    <string name="snail_store_name">免商店</string>
+    <string name="snail_agree">我已阅读并同意</string>
+    <string name="snail_terms">免商店用户协议</string>
+    <string name="snail_terms_title">用户协议</string>
+    <string name="snail_login">登录</string>
+    <string name="snail_jump">跳过</string>
+    <string name="snail_gift">礼包</string>
+    <string name="snail_login_account_hint">请输入蜗牛通行证/邮箱</string>
+    <string name="snail_password_hint">请输入密码</string>
+    <string name="snail_no_account">还没有账号？请点击注册</string>
+    <string name="snail_resetpwd">重置密码</string>
+    <string name="snail_register">注册蜗牛通行证</string>
+    <string name="snail_register_go">注册</string>
+    <string name="snail_forgotpwd">忘记密码</string>
+    <string name="snail_input_account">请输入账号</string>
+    <string name="snail_input_password">请输入密码</string>
+    <string name="snail_input_repassword">请再次输入密码</string>
+    <string name="snail_input_repassword_different">两次密码不一致</string>
+    <string name="snail_input_repassword_same">初始密码与新密码相同</string>
+    <string name="snail_register_format">您的账号长度必须为6-25个字符，您的密码长度必须为8-16个字符，且必须含一个数字、一个字母，字母区分大小写。</string>
+    <string name="snail_acc_format">您的账号长度必须为6-25个字符</string>
+    <string name="snail_pass_format">您的密码长度必须为8-16个字符，且必须含一个数字、一个字母，字母区分大小写。</string>
+    <string name="snail_title">title</string>
+    <string name="snail_login_warmtip">温馨提示：</string>
+    <string name="snail_login_warmtip1">请确保使用本机号码开通免流量服务，否则不能实现免流量</string>
+    
+	<string name="snail_zero_tutubi">0 兔兔币</string>
+    <string name="snail_reg_normal">普通注册</string>
+    <string name="snail_reg_mail">邮箱注册</string>
+    <string name="snail_reg_check">请输入验证码</string>
+    <string name="snail_reg_mailaccount">请输入您的邮箱</string>
+    <string name="snail_user_center">用户中心</string>
+    <string name="snail_bind_btn">确认绑定</string>
+    <string name="snail_bind_refresh">刷新试试</string>
+    <string name="snail_bind_network_err">网络出错！</string>
+    <string name="snail_bind_phone">绑定手机</string>
+    <string name="snail_bind_phone_number">绑定手机号码</string>
+    <string name="snail_input_phone_number">请输入手机号码</string>
+    <string name="snail_confirm_bind">确认绑定</string>
+    <string name="snail_gain_check">获取验证码</string>
+    <string name="snail_bind_email">绑定邮箱</string>
+    <string name="snail_change_pwd">修改蜗牛通行证密码</string>
+    <string name="snail_change_pwd_tips1">温馨提示</string>
+    <string name="snail_change_pwd_tips2">蜗牛170免卡的服务密码请在免卡营业厅内修改</string>
+    <string name="snail_userc_operate">请选择以下信息，进行操作。</string>
+    <string name="snail_userc_contact">联系客服</string>
+    <string name="snail_userc_tel">客服热线(7*24小时)</string>
+    <string name="snail_userc_complaints">投诉热线(7*24小时)</string>
+    <string name="snail_userc_tel_num">0512-67631800</string>
+    <string name="snail_userc_complaints_num">0512-67631800-4</string>
+    <string name="snail_resetpwd_inputaccount">请输入蜗牛通行证</string>
+    <string name="snail_account">蜗牛通行证：</string>
+    <string name="snail_pwd_old">请输入旧密码</string>
+    <string name="snail_pwd_new">请输入新密码</string>
+    <string name="snail_pwd_new_again">请确认新密码</string>
+    <string name="snail_submit">提交</string>
+    <string name="snail_common_hint_mobile">请输入手机号码</string>
+    <string name="snail_common_get_code">获取验证码</string>
+    <string name="snail_prompt">提示</string>
+    <string name="snail_hint_float_view">菜单在下次登录游戏前不再显示</string>
+    <string name="snail_sure">确定</string>
+    <string name="snail_complete">完成</string>
+    <string name="snail_bind_success_tips">恭喜您，绑定成功</string>
+    <string name="snail_please_input_check_code">请输入验证码</string>
+    
+    <string name="snail_changepwd_1">通过旧密码修改</string>
+    <string name="snail_changepwd_2">通过手机号修改</string>
+    <string name="snail_register_success_tips">您已成功注册，请尽快去个人中心修改密码！</string>
+</resources>

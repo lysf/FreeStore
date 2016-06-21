@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/unbind_banner"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/unbind_banner" />
+
+    <TextView
+        android:id="@+id/unbind_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unbind_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/unbind_text"
+        android:textColor="@color/common_oval_red"
+        android:textSize="@dimen/text_size_big" />
+
+    <TextView
+        android:id="@+id/account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unbind_text"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/bind_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_name"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/unbind_number"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/bind_number"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_green_selector"
+        android:gravity="center"
+        android:text="@string/unbind"
+        android:textColor="@android:color/white"
+
+        />
+
+
+</RelativeLayout>

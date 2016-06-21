@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--基本的Theme包括ActionBar样式-->
+    <!-- common activity theme -->
+    <style name="AppBase" parent="@style/MyAppTheme">
+        <item name="android:windowBackground">@color/common_window_bg</item>
+        <item name="actionBarStyle">@style/CommonActionBar</item>
+        <item name="android:progressBarStyle">@style/ProgressBar</item>
+        <item name="toolbarStyle">@style/AppThemeToolbar</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Activity</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="colorPrimary">@color/theme_color_primary</item>
+        <item name="colorPrimaryDark">@color/theme_color_primary_dark</item>
+        <item name="actionBarSize">@dimen/actionbar_height</item>
+        <item name="android:colorPrimary">@color/theme_color_primary</item>
+        <item name="android:colorPrimaryDark">@color/theme_color_primary_dark</item>
+        <item name="android:actionBarSize">@dimen/actionbar_height</item>
+    </style>
+
+    <style name="AppBase.NoActionBar" parent="AppBase">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SwipeBackTheme" parent="AppBase">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:dropDownListViewStyle">@style/CustomDropDownListViewStyle</item>
+        <item name="selectableItemBackground">@drawable/ab_btn_selector</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Activity</item>
+    </style>
+
+    <style name="SwipeBackTheme.NoActionBar" parent="AppBase">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:dropDownListViewStyle">@style/CustomDropDownListViewStyle</item>
+        <item name="selectableItemBackground">@drawable/ab_btn_selector</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Activity</item>
+    </style>
+
+    <style name="OverlaySwipeBackTheme" parent="SwipeBackTheme">
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <style name="VideoSwipeBackTheme" parent="SwipeBackTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parene = "@style/W"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@android:color/transparent</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="DeskGameTheme" parent="AppBase">
+        <item name="android:colorPrimaryDark">@color/translucent_full</item>
+        <item name="android:windowTranslucentNavigation">@color/translucent_full</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:dropDownListViewStyle">@style/CustomDropDownListViewStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/translucent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimScaleIn</item>
+    </style>
+    <style name="TransparentFull" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/translucent_full</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimScaleIn</item>
+        <item name="actionBarStyle">@style/CommonActionBar</item>
+        <item name="colorPrimary">@color/theme_color_primary</item>
+        <item name="colorPrimaryDark">@color/theme_color_primary_dark</item>
+        <item name="actionBarSize">@dimen/actionbar_height</item>
+        <item name="android:colorPrimary">@color/theme_color_primary</item>
+        <item name="android:colorPrimaryDark">@color/theme_color_primary_dark</item>
+        <item name="android:actionBarSize">@dimen/actionbar_height</item>
+    </style>
+
+    <style name="ProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
+    </style>
+
+    <style name="MyAppTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_back_normal</item>
+        <item name="actionModeCloseButtonStyle">@style/CloseMode</item>
+    </style>
+
+    <style name="CloseMode" parent="@style/Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+    <style name="TransTheme" parent="@style/MyAppTheme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="Animation_Activity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@color/translucent</item>
+    </style>
+</resources>

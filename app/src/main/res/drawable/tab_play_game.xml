@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认时的图片 -->
+
+    <!-- 选择时的图片 -->
+    <item android:drawable="@drawable/tab_play_game_on"   android:state_pressed="true"/>
+     <item android:drawable="@drawable/tab_play_game_on"  android:state_selected="true"/>
+       <item android:drawable="@drawable/tab_play_game_on"  android:state_checked="true"/>
+         <item android:drawable="@drawable/tab_play_game_off" />
+</selector>

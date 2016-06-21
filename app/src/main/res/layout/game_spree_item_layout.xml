@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_selector">
+
+    <TextView
+        android:id="@+id/game_spree_exchange"
+        android:layout_width="@dimen/download_btn_width"
+        android:layout_height="@dimen/download_btn_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:background="@drawable/btn_exchange_selector"
+        android:gravity="center"
+        android:textColor="@color/btn_green_normal"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/game_spree_exchange"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_4dp"
+        android:paddingRight="@dimen/dimen_6dp">
+
+
+        <TextView
+            android:id="@+id/game_spree_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_cd_key"
+            style="@style/AppVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_spree_title"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/exchange_code" />
+
+
+        <TextView
+            android:id="@+id/game_spree_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_cd_key"
+            android:layout_marginBottom="@dimen/dimen_18dp"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_toLeftOf="@id/game_spree_exchange"
+            android:lineSpacingExtra="@dimen/dimen_8dp"
+            android:textColor="@color/general_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_line_color" />
+</RelativeLayout>

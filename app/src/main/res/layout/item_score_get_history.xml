@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toggle_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="@dimen/dimen_8dp"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:paddingTop="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/tv_score_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_score_validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_score_time_title"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/general_text_color"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_8dp"
+            android:src="@drawable/ic_more" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/line_view"
+        layout="@layout/common_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp" />
+
+    <LinearLayout
+        android:id="@id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

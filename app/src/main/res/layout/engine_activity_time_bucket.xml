@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/progress_bar"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.snailgame.cjg.common.widget.PagerSlidingTabStrip xmlns:pslts="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tabs"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:fillViewport="false"
+        pslts:pstsIndicatorColor="@color/red"
+        pslts:pstsIndicatorHeight="3dp"
+        pslts:pstsShowDivider="false"
+        pslts:pstsShowIndicatorBmp="false"
+        pslts:pstsTitleDefaultColor="@color/general_text_color"
+        pslts:pstsTitleSelColor="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <third.com.snail.trafficmonitor.ui.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

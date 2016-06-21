@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pslts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.snailgame.cjg.common.widget.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_height"
+                android:layout_marginRight="@dimen/dimen_40dp"
+                android:background="@color/white"
+                android:fillViewport="false"
+                pslts:pstsIndicatorColor="@color/red"
+                pslts:pstsIndicatorHeight="3dp"
+                pslts:pstsShowDivider="false"
+                pslts:pstsShowIndicatorBmp="false"
+                pslts:pstsTitleDefaultColor="@color/general_text_color"
+                pslts:pstsTitleSelColor="@color/red" />
+            <TextView
+                android:id="@+id/my_category_text"
+                android:gravity="center_vertical"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dimen_16dp"
+                android:layout_height="44dp"
+                android:text="@string/news_my_channel_title"
+                android:textColor="@color/second_text_color"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/iv_channel"
+                android:layout_width="52dp"
+                android:layout_height="@dimen/tab_height"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/channel_arrow_bg"
+                android:padding="8dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_news_arrow_down_up" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/ll_channel_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="invisible"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

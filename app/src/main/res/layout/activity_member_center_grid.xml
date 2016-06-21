@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snailgame.cjg.common.widget.FullGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_color"
+    android:gravity="center"
+    android:horizontalSpacing="1px"
+    android:listSelector="@drawable/ab_btn_selector"
+    android:numColumns="4"
+    android:scrollbars="none"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="1px" />
+

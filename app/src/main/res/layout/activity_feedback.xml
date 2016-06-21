@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="@color/white"
+        android:hint="@string/feed_back_contend_hint"
+        android:inputType="textMultiLine"
+        android:minHeight="180dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="28dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="28dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:lineSpacingMultiplier="1.2"
+        android:textCursorDrawable="@drawable/ic_cursor"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:hint="@string/feed_back_title_hint"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:minHeight="60dp"
+        android:textCursorDrawable="@drawable/ic_cursor"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="16dp"
+        android:text="@string/feed_back_contact_tip"
+        android:textColor="@color/general_text_color"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_scan_ok_selector"
+        android:clickable="true"
+        android:text="@string/feedback_commit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+</LinearLayout>

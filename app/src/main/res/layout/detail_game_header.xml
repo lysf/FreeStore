@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/innerHeaderView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/detail_header_height"
+    android:background="@drawable/ic_detail_cover_golden">
+
+    <ImageView
+        android:id="@+id/game_detail_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_40_black" />
+
+    <include
+        android:id="@+id/appinfo_icon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="@dimen/detail_item_app_logo"
+        android:layout_height="@dimen/detail_item_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY" />
+
+    <include
+        android:id="@+id/app_icon_label"
+        layout="@layout/simple_image"
+        android:layout_width="@dimen/app_logo_label_size"
+        android:layout_height="@dimen/app_logo_label_size"
+        android:layout_alignLeft="@+id/appinfo_icon"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/appinfo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appinfo_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big" />
+
+
+    <include
+        layout="@layout/down_play_free_include"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appinfo_title"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:id="@+id/game_rate"
+        style="@style/detailRatingBarSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flow_free_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <LinearLayout
+        android:id="@+id/versionLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_rate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/appinfo_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/translucent_80_white"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:id="@+id/app_size_divider"
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/translucent_80_white" />
+
+        <TextView
+            android:id="@+id/appinfo_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/app_size_divider"
+            android:textColor="@color/translucent_80_white"
+            android:textSize="@dimen/text_size_normal" />
+
+
+    </LinearLayout>
+</RelativeLayout>

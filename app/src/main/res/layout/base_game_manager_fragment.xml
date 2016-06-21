@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/load_more_listview_gap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"/>
+
+    <RelativeLayout
+        android:id="@+id/update_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/onekey_update"
+            android:layout_width="@dimen/bottom_btn_state_download_width"
+            android:layout_height="@dimen/bottom_btn_state_download_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_green_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/list_item_open"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_btn_state_download_size" />
+    </RelativeLayout>
+
+</LinearLayout>

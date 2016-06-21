@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/video_thum"
+        layout="@layout/simple_image_normal"
+        android:layout_width="@dimen/game_detail_screenshot_width"
+        android:layout_height="@dimen/game_detail_screenshot_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="@dimen/game_detail_screenshot_width"
+        android:layout_height="@dimen/game_detail_screenshot_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:background="@color/translucent_70_black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:src="@drawable/ic_play_video" />
+</FrameLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/innerHeaderView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/image"
+        layout="@layout/simple_image_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/collection_header_image_height"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingRight="@dimen/dimen_16dp"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/text_size_big" />
+
+    <TextView
+        android:id="@+id/title_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingRight="@dimen/dimen_16dp"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/text_size_normal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_14dp"
+        android:background="@drawable/collection_divider" />
+
+    <com.snailgame.cjg.common.widget.ExpandableTextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_14dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_16dp"
+        expandableTextView:maxCollapsedLines="2">
+
+        <TextView
+            android:id="@+id/second_expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingRight="@dimen/dimen_16dp"
+            android:textColor="@color/general_text_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/second_expandable_text"
+            android:layout_alignRight="@+id/second_expandable_text"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+    </com.snailgame.cjg.common.widget.ExpandableTextView>
+</LinearLayout>

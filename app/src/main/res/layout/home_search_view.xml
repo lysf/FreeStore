@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_searchview"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_30dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/dimen_16dp"
+    android:layout_marginRight="@dimen/dimen_16dp"
+    android:layout_marginTop="@dimen/search_init_position"
+    android:background="@drawable/search_view_bg">
+
+    <TextView
+        android:id="@+id/hot_search_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dimen_60dp"
+        android:drawableLeft="@drawable/ic_quick_search"
+        android:drawablePadding="@dimen/dimen_12dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_12dp"
+        android:singleLine="true"
+        android:textColor="@color/translucent_70_white" />
+
+    <ImageView
+        android:id="@+id/messing_scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:paddingBottom="@dimen/dimen_8dp"
+        android:paddingLeft="@dimen/dimen_32dp"
+        android:paddingRight="@dimen/dimen_12dp"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:src="@drawable/messing_scanner" />
+</FrameLayout>

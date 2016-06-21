@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dialog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/tips_dialog_bg"
+    android:orientation="vertical">
+
+    <com.snailgame.cjg.common.widget.DialogTitleLayout
+        android:id="@+id/tip_icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dialog:hasIcon="true"
+        dialog:titleText="@string/success" />
+
+    <TextView
+        android:id="@+id/tv_cdkey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_sides_margin"
+        android:layout_marginRight="@dimen/dialog_sides_margin"
+        android:layout_marginTop="@dimen/dialog_content_top_margin"
+        android:gravity="left"
+        android:textColor="@color/primary_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dialog_sides_margin"
+        android:layout_marginRight="@dimen/dialog_sides_margin"
+        android:layout_marginTop="@dimen/dialog_content_between_margin"
+        android:gravity="left"
+        android:lineSpacingExtra="@dimen/dimen_10dp"
+        android:textColor="@color/second_text_color"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_bottom_height"
+        android:layout_marginTop="@dimen/dialog_content_top_margin"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dialog_bottom_bottom_margin"
+        android:paddingLeft="@dimen/dialog_sides_margin"
+        android:paddingRight="@dimen/dialog_sides_margin">
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_scan_cancle_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/btn_close"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/text_size_normal" />
+
+        <Button
+            android:id="@+id/btn_lookGift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_scan_ok_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/btn_copy_cdkey"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+</LinearLayout>

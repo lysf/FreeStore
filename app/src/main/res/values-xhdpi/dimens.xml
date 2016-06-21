@@ -1,0 +1,11 @@
+<resources>
+
+    <dimen name="free_card_bottom">100dp</dimen>
+    <dimen name="boot_anim_margin_bottom">86dp</dimen>
+    <dimen name="chat_margin_top">60dp</dimen>
+    <dimen name="guide_telephone_charge_margin_top">76dp</dimen>
+    <dimen name="score_margin_bottom">88dp</dimen>
+    <dimen name="free_card_199_margin_top">101dp</dimen>
+
+    <dimen name="go_home_btn_margin_bottom">90dp</dimen>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snailgame.cjg.common.widget.AppDetailActionBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionBarLayoutHolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_collect_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/actionbar_title_color"
+                android:textSize="@dimen/action_bar_title_size"
+                android:background="@drawable/ab_btn_selector"
+                android:drawableLeft="@drawable/ic_back_normal"
+                android:paddingLeft="@dimen/dimen_16dp"
+                android:drawablePadding="@dimen/dimen_16dp"
+                android:gravity="center_vertical" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/unread_msg"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/msg_num_while_bg"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="11sp"
+            android:layout_marginLeft="38dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <!--FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_ab_download"
+            android:layout_width="@dimen/action_bar_icon_width"
+            android:layout_height="@dimen/action_bar_icon_height"
+            android:clickable="true"
+            android:src="@drawable/ic_ab_download_selector" />
+
+        <TextView
+            android:id="@+id/download_count"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/msg_num_while_bg"
+            android:focusable="false"
+            android:gravity="center"
+            android:textColor="@color/sel_txt"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_ab_search"
+        android:layout_width="@dimen/action_bar_icon_width"
+        android:layout_height="@dimen/action_bar_icon_height"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/layout"
+        android:clickable="true"
+        android:src="@drawable/ic_ab_search_selector" /-->
+    <ImageView
+        android:id="@+id/btn_shared"
+        android:layout_width="@dimen/action_bar_icon_width"
+        android:layout_height="@dimen/action_bar_icon_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:background="@drawable/ab_btn_selector"
+        android:src="@drawable/detail_ab_share_white" />
+
+</com.snailgame.cjg.common.widget.AppDetailActionBar>

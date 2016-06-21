@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/comment_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_header_with_tab_height"
+        android:background="@color/common_window_bg" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_comment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginLeft="8dp"
+        android:drawableLeft="@drawable/ic_comment_header"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/btn_green_normal"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/comment_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:background="@color/common_line_color"
+        android:visibility="gone" />
+</LinearLayout>

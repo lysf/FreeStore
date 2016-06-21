@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_list_item_height"
+    android:background="@drawable/list_item_selector"
+
+    android:paddingTop="@dimen/dimen_18dp">
+
+
+    <include
+        android:id="@+id/download_btn"
+        layout="@layout/rank_download_btn_container"
+        android:layout_width="@dimen/download_btn_width"
+        android:layout_height="@dimen/download_btn_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_14dp" />
+
+    <include
+        android:id="@+id/rank_app_icon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="@dimen/item_app_logo"
+        android:layout_height="@dimen/item_app_logo"
+        android:layout_marginLeft="@dimen/dimen_16dp" />
+
+    <TextView
+        android:id="@+id/rank_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_12dp"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_toRightOf="@id/rank_app_icon"
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:text="NAme" />
+
+    <RatingBar
+        android:id="@+id/rank_app_rate"
+        style="@style/ratingBarGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rank_app_title"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_toRightOf="@id/rank_app_icon"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/no_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rank_app_title"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_toRightOf="@id/rank_app_icon"
+        android:textColor="@color/second_text_color"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/home_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:background="@color/common_line_color"
+        android:paddingTop="@dimen/dimen_18dp" />
+
+</RelativeLayout>

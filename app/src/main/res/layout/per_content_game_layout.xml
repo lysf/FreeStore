@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ab_btn_selector"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_28dp"
+    android:visibility="invisible">
+
+    <include
+        android:id="@+id/game_icon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="@dimen/item_app_logo"
+        android:layout_height="@dimen/item_app_logo"
+        android:layout_centerHorizontal="true" />
+
+    <include
+        android:id="@+id/game_icon_label"
+        layout="@layout/simple_image"
+        android:layout_width="@dimen/app_logo_label_size"
+        android:layout_height="@dimen/app_logo_label_size"
+        android:layout_alignLeft="@id/game_icon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="@dimen/item_app_logo"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/game_icon"
+        android:layout_below="@id/game_icon"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/primary_text_color"
+        android:textSize="14sp" />
+
+
+    <include
+        layout="@layout/rank_download_btn_container"
+        android:layout_width="@dimen/download_btn_width"
+        android:layout_height="@dimen/download_btn_height"
+        android:layout_below="@id/game_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp" />
+
+    <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="@dimen/download_btn_width"
+        android:layout_height="@dimen/download_btn_height"
+        android:layout_below="@id/game_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/btn_green_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/see_detail"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"
+        android:visibility="gone" />
+
+</RelativeLayout>

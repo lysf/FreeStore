@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_account_info"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/rv_currency_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector">
+        <ImageView
+            android:id="@+id/iv_account_currency"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/personal_account_currency"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_account_currency"
+            android:layout_below="@+id/iv_account_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/red_light"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_account_currency_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_account_currency"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:includeFontPadding="false"
+            android:text="@string/slide_menu_currency"
+            android:textColor="@color/general_text_color"
+            android:textSize="@dimen/text_size_little" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="32dp"
+        android:background="@color/common_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rv_voucher_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector">
+        <ImageView
+            android:id="@+id/iv_account_voucher"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/personal_account_voucher"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_account_voucher"
+            android:layout_below="@+id/iv_account_voucher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/red_light"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_account_voucher_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_account_voucher"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:includeFontPadding="false"
+            android:text="@string/slide_menu_voucher"
+            android:textColor="@color/general_text_color"
+            android:textSize="@dimen/text_size_little" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="32dp"
+        android:background="@color/common_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/rv_point_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector">
+        <ImageView
+            android:id="@+id/iv_account_point"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/personal_account_point"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_account_point"
+            android:layout_below="@+id/iv_account_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/red_light"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_account_point_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_account_point"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:includeFontPadding="false"
+            android:text="@string/slide_menu_point"
+            android:textColor="@color/general_text_color"
+            android:textSize="@dimen/text_size_little" />
+    </RelativeLayout>
+
+
+</LinearLayout>

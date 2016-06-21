@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_activity_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <com.snailgame.cjg.common.widget.NoSwipeViewPager
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_tab_height" />
+
+    <View
+        android:id="@+id/banner_mask"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/banner_mask" />
+
+    <include layout="@layout/base_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/repeat_tab_bg"
+        android:layout_gravity="bottom"
+        android:gravity="bottom" >
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_tab_height"
+        android:layout_gravity="bottom"
+        android:dividerPadding="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_tab_height"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home"
+            android:text="@string/tab_title1"
+            android:textColor="@color/bottom_tab_text_color" />
+
+        <RadioButton
+            android:id="@+id/tab_play_game"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_tab_height"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_play_game"
+            android:text="@string/tab_title2"
+            android:textColor="@color/bottom_tab_text_color" />
+
+        <RadioButton
+            android:id="@+id/tab_communication"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_tab_height"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_communication"
+            android:text="@string/tab_title3"
+            android:textColor="@color/bottom_tab_text_color" />
+
+        <RadioButton
+            android:id="@+id/tab_cool_play"
+            style="@style/RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_tab_height"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_cool_play"
+            android:text="@string/tab_cool_play"
+            android:textColor="@color/bottom_tab_text_color" />
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_tab_height"
+            android:layout_weight="1"
+            >
+
+            <RadioButton
+                android:id="@+id/mine"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/tab_mine"
+                android:text="@string/mine"
+                android:textColor="@color/bottom_tab_text_color" />
+
+            <ImageView
+                android:id="@+id/scratch_img_red"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_marginRight="22dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                android:background="@drawable/scratch_white_dot_little"/>
+        </FrameLayout>
+    </RadioGroup>
+    </RelativeLayout>
+</FrameLayout>

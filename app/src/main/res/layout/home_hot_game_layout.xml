@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:background="@drawable/home_bottom_bg_normal"
+        android:orientation="vertical">
+
+        <com.snailgame.cjg.common.widget.CustomQuickReturnView
+            android:id="@+id/hotGameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="none"
+            android:background="@color/white" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dialog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/tips_dialog_bg"
+    android:minHeight="110dp"
+    android:minWidth="@dimen/dialog_width"
+    android:orientation="vertical">
+
+    <com.snailgame.cjg.common.widget.DialogTitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dialog:hasIcon="true"
+        dialog:isRed="true"
+        dialog:titleText="@string/flow_free_ignore" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="@dimen/dialog_content_bottom_margin"
+        android:paddingLeft="@dimen/dialog_sides_margin"
+        android:paddingRight="@dimen/dialog_sides_margin"
+        android:paddingTop="@dimen/dialog_content_top_margin"
+        android:textColor="@android:color/black"
+        android:textColorLink="@color/btn_green_normal"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_bottom_button_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dialog_bottom_bottom_margin"
+        android:layout_marginLeft="@dimen/dialog_sides_margin"
+        android:layout_marginRight="@dimen/dialog_sides_margin"
+        android:background="@drawable/btn_scan_ok_selector"
+        android:gravity="center"
+        android:text="@string/flow_free_dialog_ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big" />
+
+</LinearLayout>

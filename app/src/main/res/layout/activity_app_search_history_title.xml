@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_stick_history_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_keyword_margin_bottom"
+    android:background="@color/common_window_bg"
+    android:layout_marginTop="@dimen/search_history_title_margin_top">
+
+    <TextView
+        android:id="@+id/search_history_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="@string/search_history_title"
+        android:textColor="@color/search_history_hot_title_color"
+        android:textSize="@dimen/text_size_normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/search_delete_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/search_btn_selector"
+            android:text="@string/search_history_delete"
+            android:padding="@dimen/dimen_4dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_normal"  />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/search_delete_key"
+            android:layout_toStartOf="@id/search_delete_key"
+            android:background="@color/translucent_20_black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

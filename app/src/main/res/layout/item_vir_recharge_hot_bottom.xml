@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/list_item_selector">
+
+    <include
+        android:id="@+id/siv_goods_icon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="21dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:singleLine="true"
+        android:textColor="@color/primary_text_color"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/store_goods_recharge_header"
+            android:textColor="@color/second_text_color"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/store_goods_recharge_footer"
+            android:textColor="@color/red"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_see"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        android:background="@drawable/common_green_btn_selector"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/see_detail"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+</LinearLayout>

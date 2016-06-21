@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_nor_list_item_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/divider_height">
+
+
+    <RelativeLayout
+        android:id="@+id/headerRoot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/module_header_height"
+        android:background="@drawable/list_item_selector"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/card_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/card_header_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textColor="@color/general_text_color"
+            android:textSize="@dimen/text_size_little" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/header_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/common_line_color" />
+
+</LinearLayout>

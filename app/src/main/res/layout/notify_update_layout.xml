@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/big_notification_bg_color">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="62dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="@string/btn_up"
+        android:background="@drawable/notify_onekey_update"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/btn_update"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/update_app_icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/notify_img_1"
+                android:layout_width="22dp"
+                android:visibility="gone"
+                android:layout_height="22dp"/>
+
+            <ImageView
+                android:id="@+id/notify_img_2"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:id="@+id/notify_img_3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:id="@+id/notify_img_4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:id="@+id/notify_img_5"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/notify_more_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/more_app"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

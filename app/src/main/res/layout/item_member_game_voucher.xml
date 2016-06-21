@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:layout_marginLeft="@dimen/dimen_8dp"
+    android:layout_marginRight="@dimen/dimen_8dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_item_member_game_voucher_left" />
+
+
+    <include
+        android:id="@+id/siv_game_voucher_icon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:focusable="false"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_game_voucher_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:singleLine="true"
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_game_voucher_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_game_voucher_title"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/member_game_play_dies"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_game_voucher_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_game_voucher_member"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:singleLine="true"
+            android:textColor="@color/second_text_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_get"
+        style="@style/CustomBtnStyle"
+        android:layout_width="@dimen/download_btn_width"
+        android:layout_height="@dimen/download_btn_height"
+        android:layout_marginLeft="@dimen/download_btn_margin_left"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:background="@drawable/btn_green_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/not_get"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_item_member_game_voucher_right" />
+</LinearLayout>

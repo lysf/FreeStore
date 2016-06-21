@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">免商店</string>
+    <string name="tab_title1">首页</string>
+    <string name="tab_title2">游戏</string>
+    <string name="tab_title3">通信</string>
+    <string name="tab_cool_play">酷玩</string>
+    <string name="mine">我的</string>
+    <string-array name="game_manage">
+        <item>下载管理</item>
+        <item>已安装</item>
+        <item>可更新</item>
+    </string-array>
+
+    <string name="voucher_tutu_title">兔兔券</string>
+    <string name="voucher_youxi_title">游戏代金券</string>
+    <string name="voucher_kuwan_title">酷玩代金券</string>
+
+    <string-array name="score_wall_titles">
+        <item>做任务得积分</item>
+        <item>积分兑换奖励</item>
+    </string-array>
+
+
+    <string-array name="detail_tab_titles">
+        <item>介绍</item>
+        <item>评论</item>
+        <item>礼包</item>
+        <item>论坛</item>
+    </string-array>
+
+
+    <string-array name="seekgame_bar_titles">
+        <item>推荐</item>
+        <item>礼包</item>
+        <item>分类</item>
+        <item>排行</item>
+        <item>论坛</item>
+    </string-array>
+
+
+    <string-array name="seekapp_bar_titles">
+        <item>推荐</item>
+        <item>分类</item>
+    </string-array>
+
+
+    <!-- APP_MANAGE_CATEGORY -->
+    <string name="title_activity_down_load_manage">下载管理</string>
+
+    <!-- search -->
+    <string name="search_hint">搜索</string>
+    <string name="search_history_delete">清空</string>
+    <string name="descr_image">图片</string>
+    <string name="search_hot_title">热门搜索</string>
+    <string name="search_history_title">搜索历史</string>
+    <string name="chang_search_key">换一批</string>
+    <string name="search_result_count">（%s个结果）</string>
+    <string name="search_guess_header_title">抱歉！</string>
+    <string name="search_guess_header_content">没有搜到相关结果，以下内容您可能喜欢</string>
+
+    <string-array name="search_result_tabs">
+        <item>全部</item>
+        <item>游戏/软件</item>
+        <item>动态</item>
+        <item>酷玩</item>
+    </string-array>
+
+    <!-- share -->
+    <string name="menu_share_success">恭喜您分享成功！</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_faith">您已经分享啦</string>
+    <string name="share_shareing">正在分享...</string>
+    <string name="share_cancle">分享已取消</string>
+    <string name="share_fail">分享失败</string>
+    <string name="share">分享</string>
+    <string name="no_image_to_share">未找到可分享的图片</string>
+    <string name="share_good_app">分享一个好应用给你：</string>
+    <string name="share_free_tip">，通过免商店可以免流量下载。</string>
+    <string name="loading_game_icon">正在加载应用图标</string>
+    <string name="weibosdk_demo_not_support_api_hint">微博客户端未安装或微博客户端是非官方版本。</string>
+
+
+    <string name="no_weixin">还没有安装微信哦</string>
+    <string name="errcode_success">分享成功</string>
+    <string name="errcode_cancel">分享取消</string>
+    <string name="errcode_unknown">分享失败</string>
+    <string name="get_share_points">恭喜您成功分享</string>
+    <string name="chooser_title">选择要分享的应用</string>
+    <string name="decode_bmp_fail">解析图片失败，请稍后重试</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_delete">删除</string>
+    <item name="list_item_tag" type="id" />
+    <string name="btn_download">下载</string>
+    <string name="btn_waiting">等待</string>
+    <string name="btn_continue">继续</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_install">安装</string>
+    <string name="btn_upgrade">更新</string>
+    <string name="btn_up">升级</string>
+    <string name="btn_open">打开</string>
+    <string name="btn_fail">重载</string>
+    <string name="btn_installing">安装中</string>
+    <string name="btn_patching">验证中</string>
+    <string name="btn_notready">敬请期待</string>
+    <string name="btn_exit">退出</string>
+    <string name="silence_download_finish">更新包已下载完成</string>
+    <string name="silence_install">立即安装</string>
+    <string name="tv_app_default_name">应用名称</string>
+
+    <!-- find game -->
+
+    <string name="tv_loading">正在载入……</string>
+
+    <!--add by sunxy-->
+    <string name="feedback_commit">提交</string>
+
+    <string name="network_error">无网络链接</string>
+
+    <string name="load_failture">加载失败！</string>
+
+    <string name="success">成功</string>
+    <string name="fail">失败</string>
+
+    <string name="manage_is_delete">是否删除选中的任务？</string>
+    <string name="double_click_exit">再按一次返回键将退出免商店</string>
+    <string name="list_item_download">下载</string>
+    <string name="list_item_continue">继续</string>
+    <string name="list_item_open">打开</string>
+    <string name="list_item_uninstall">卸载</string>
+    <string name="list_item_update">更新</string>
+    <string name="list_item_ignore">忽略更新</string>
+    <string name="list_item_ignore_cancel">取消忽略</string>
+    <string name="delete_loading">正在删除中…</string>
+
+    <string name="user_guide_download_tasks_delete">提示：长按列表可以删除下载任务</string>
+    <string name="search_text_length_too_long">关键字最长为10个汉字</string>
+
+    <string name="download_state_not_install">未安装</string>
+    <string name="download_state_installing">安装中</string>
+    <string name="download_state_patching">安装包验证中</string>
+    <string name="download_state_installed">已安装</string>
+    <string name="download_state_fail">下载失败</string>
+    <string name="game_label">应用管理</string>
+    <string name="ab_upgrade_ignore_title">已忽略更新</string>
+    <!-- message list -->
+
+    <!-- settings string -->
+    <string-array name="setting_array">
+        <item>只在WIFI环境下下载</item>
+        <item>使用流量下载时的弹窗提示</item>
+        <item>下载完成后后台秒装(需root权限)</item>
+        <item>自动安装应用 (无需root)</item>
+        <item>安装完成后自动删除安装包</item>
+        <item>开启消息推送</item>
+        <item>应用更新提醒</item>
+        <item>检测更新</item>
+        <item>意见反馈</item>
+        <item>关于</item>
+    </string-array>
+
+    <string name="setting_auto_install_deny">由于您的系统没有root，下载后无法自动安装</string>
+    <string name="setting_auto_install_acc_service_name">免商店自动装</string>
+    <string name="setting_auto_install_acc_des">[免商店自动装] 可以在免商店安装和升级应用时，无需一直盯着手机，免商店会帮您点击所需按钮,确保应用顺利安装。\n\n打开服务时，系统会弹出例行的警告。免商店承诺不会通过本功能收集你的隐私信息。\n\n[免商店自动装] 无需获取Root权限，支持 4.1以上。
+    </string>
+    <!-- update string -->
+    <string name="update_detecting">正在检测...</string>
+    <string name="no_update">当前已是最新版本</string>
+    <string name="update_failed">更新失败，请您在网络畅通时再试一次</string>
+
+    <!-- feedback string -->
+    <string name="feed_back">问题反馈</string>
+    <string name="feed_back_title_hint">请留下您的手机/QQ/邮箱</string>
+    <string name="feed_back_content_null">反馈内容不能为空</string>
+    <string name="feed_back_contend_hint">亲，您遇到什么系统问题，或有什么功能建议吗？欢迎您提给我们，谢谢！</string>
+    <string name="about_action_bar_title">关于</string>
+    <string name="feed_back_success">提交成功，感谢您的反馈，我们会尽快处理您的反馈意见</string>
+    <string name="operate_fail">提交失败，请检测网络是否正常，然后重新尝试提交</string>
+    <string name="feed_back_contact_tip">您的联系方式有助于沟通和解决问题，仅工作人员可见</string>
+    <!-- gam deatil -->
+    <string name="menu_delete">删除</string>
+
+    <string name="not_lt_is_continue">
+       您当前处于非wifi网络环境下，继续下载将消耗数据流量。\n\n推荐使用免流量下载，畅下畅玩，随时随地！
+    </string>
+    <string name="click_here">
+       &#160;&#160;&#160;&#160;点此立即查看>>
+    </string>
+    <!-- login -->
+    <string name="setting_deal">用户协议</string>
+    <string name="page_content">内容详情</string>
+
+    <!-- download error msg-->
+    <string name="error_msg_download_invalid_url">%s无法下载</string>
+    <string name="error_msg_download_unknown_error">%s下载时出现未知错误，请联系客服</string>
+    <string name="error_msg_download_unknown_http_code">%s下载失败，链接错误</string>
+    <string name="error_msg_download_device_not_found">%s下载失败，未找到存储卡</string>
+    <string name="error_msg_download_file_exists">%s下载失败，下载文件已经存在</string>
+    <string name="error_msg_download_insufficient_space">%s下载失败，存储空间不足</string>
+    <string name="error_msg_download_wifi_only">您已设置只在wifi连接时才可以下载应用</string>
+    <string name="error_msg_download_already_exists">%s已在下载列表</string>
+    <string name="error_msg_download_md5_not_match">%s下载失败，下载文件不完整</string>
+    <string name="error_msg_download_patching_file_error">由于网络原因，您下载%s的省流量更新失败，请尝试下载完整的更新包</string>
+    <string name="error_msg_download_file_not_found">%s下载失败，下载文件已丢失</string>
+
+    <!-- download pause msg-->
+    <string name="pause_msg_download_waiting_for_retry">%s已暂停下载，请稍后继续</string>
+    <string name="error_msg_download_waiting_for_network">%s已暂停下载，等待可用网络</string>
+    <string name="error_msg_download_queued_for_wifi">%s已暂停下载，等待可用WIFI</string>
+    <string name="download_waitfor_wifi">等待WIFI环境下载</string>
+    <string name="download_pause">已暂停</string>
+
+    <string name="download_percent">%d%%</string>
+    <string name="downloading_percent">下载中%.2f%%</string>
+    <string name="notification_download_state_pending">等待下载</string>
+    <string name="notification_download_state_running">任务下载中</string>
+    <string name="notification_download_state_pausing">暂停下载</string>
+    <string name="notification_download_state_fail">下载失败</string>
+    <string name="notification_download_state_success">下载完成，点击安装</string>
+    <string name="notification_download_state_installed">安装成功，点击进入</string>
+    <string name="notification_download_ticker_pending">%s等待下载</string>
+    <string name="notification_download_ticker_start">%s开始下载</string>
+    <string name="notification_download_ticker_continue">%s继续下载</string>
+    <string name="notification_download_ticker_pause">%s暂停下载</string>
+    <string name="notification_download_ticker_fail">%s下载失败</string>
+    <string name="notification_download_ticker_success">%s下载完成</string>
+    <string name="notification_download_ticker_redownload">%s重新下载</string>
+    <string name="notification_download_ticker_installing">%s自动安装中</string>
+    <string name="notification_download_ticker_patching">%s正在验证中</string>
+    <string name="notification_download_ticker_installed">%s安装成功</string>
+    <string name="notification_download_unknow_app">未知应用</string>
+
+    <!--pullrefresh-->
+    <string name="app_derail_json_parse_error">您访问的应用还没准备好哦</string>
+    <string name="service_phone_lose">客服电话暂未开启</string>
+    <string name="installing">正在安装中</string>
+    <string name="patching">正在验证中</string>
+
+    <!-- 个人中心 -->
+    <string name="personal_composition">协约</string>
+    <string name="not_login">未登录</string>
+    <string name="login_and_get_more_info">登录后体验更多内容</string>
+    <string name="personal_expire_tip">您的登录身份已过期，请您重新登录！</string>
+    <string name="personal_info_failed">用户信息获取失败</string>
+    <string name="personal_info_running">正在获取用户信息,请稍等...</string>
+    <string name="personal_network_error">网络或服务器错误！</string>
+    <string name="personal_saving_tip">数据保存中...</string>
+
+    <string name="personal_user_none_download_prompt" formatted="false">今日还没有下载应用 别偷懒哦</string>
+    <string name="personal_user_little_download_prompt" formatted="false">今日只下载了%d个应用 再多下些吧</string>
+    <string name="personal_user_download_prompt" formatted="false">今日下载了%d个应用 超过了%s的免友</string>
+    <string name="personal_user_task_prompt" formatted="false">%d个任务未完成</string>
+    <string name="personal_user_scrate_prompt">天天都有福利拿</string>
+    <string name="personal_user_member_prompt">超多会员福利</string>
+    <string name="personal_code_exchange_prompt">兑换游戏礼包、代金券等</string>
+    <string name="personal_user_address_prompt">查看收货地址</string>
+    <string name="personal_user_spree_prompt" formatted="false">您已经领取了%d个礼包</string>
+    <string name="personal_user_order_prompt">查看全部订单</string>
+    <string name="personal_user_shpping_car">查看全部物品</string>
+    <string name="empty_update_msg">暂无更新</string>
+    <string name="empty_download_msg">暂无下载</string>
+    <string name="empty_installed_msg">暂无安装</string>
+    <string name="formal_download">使用流量继续下载</string>
+    <string name="free_flow_header">免流量声明</string>
+    <string name="input_search_key">请输入关键字</string>
+    <string name="first_boot_note">注意：使用本程序可能会消耗流量</string>
+    <string name="exchange_code">兑换码:</string>
+    <string name="dead_time">有效日期:</string>
+    <string name="copy">复制</string>
+    <string name="copy_success">复制成功</string>
+    <string name="persion_gift_exchange">我的礼包</string>
+    <string name="persion_my_voucher">我的代金券</string>
+    <string name="personal_currency_charge">充值</string>
+    <string name="personal_my_currency">我的兔兔币</string>
+    <string name="personal_currency_title">兔兔币余额</string>
+
+    <string-array name="personal_level_array">
+        <item>普通顾客</item>
+        <item>中级顾客</item>
+        <item>高级顾客</item>
+        <item>铜牌会员</item>
+        <item>银牌会员</item>
+        <item>金牌会员</item>
+        <item>钻石会员</item>
+        <item>初级贵宾</item>
+        <item>中级贵宾</item>
+        <item>高级贵宾</item>
+    </string-array>
+    <!--capture-->
+    <string name="do_not_alert_any_more">记住我的选择，下次不再提示</string>
+
+
+    <string name="updating_text">更新中</string>
+    <string name="splash_note">福利多，惊喜多，畅玩就用免商店</string>
+
+    <string name="game_remove">抱歉,该游戏已下架</string>
+    <string name="app_remove">抱歉,该应用已下架</string>
+    <string name="invite_friend_title">福利多，惊喜多，畅玩就下免商店</string>
+    <string name="invite_friend_content">流量全免，玩的嗨！\n海量手游，抢先玩！\n多重审核，很安全！\n专属功能，够贴心！</string>
+    <string name="invite_share_url">http://m.app.snail.com/</string>
+    <string name="not_get">领取</string>
+    <string name="none_get">领完</string>
+    <string name="spree_tao">淘号</string>
+    <string name="have_get">已领</string>
+    <string name="btn_copy_cdkey">复制兑换码</string>
+    <string name="get_gift_success">请尽快使用兑换码，因为它有可能被其他小伙伴淘走哦～</string>
+    <string name="tao_gift_success">淘到的号码不保证一定能兑换，请尽快使用</string>
+    <string name="tao_got_gift_success">亲～你已经领过礼包了，去个人中心->我的礼包查看并尽快使用</string>
+    <string name="tao_gift_success_title">淘号成功</string>
+    <string name="get_gift_success_title">领取成功</string>
+    <string name="tao_gift_failed_title">淘号失败</string>
+    <string name="get_gift_failed_title">领取失败</string>
+    <string name="about_version">版本 %s</string>
+    <string name="about_url">http://api.app1.snail.com/cms/web/center/treaty.html</string>
+    <string name="update_notification_title">应用更新免流量</string>
+    <string name="update_one_key_free">一键免流量更新</string>
+    <string name="update_one_key">一键更新</string>
+    <string name="update_notification_title_appstore">免商店更新提醒</string>
+    <string name="update_notification_title_free">免流量更新提醒</string>
+
+    <string name="notification_pending_title">%s个下载任务正在等待…</string>
+    <string name="notification_pending_content">查看全部</string>
+
+    <string name="grant_superuser_access">免商店检查到你的设备已经Root， 通过设置自动安装功能可以在下载后自动安装应用，是否开启该功能？</string>
+    <string name="grant_unroot_auto_install">您可以使用免商店自动装功能省去安装多个应用时的频繁点击,是否开启该功能？</string>
+    <string name="dialog_superuser_access_title">自动安装</string>
+    <string name="dialog_superuser_access_btn_sure">开启</string>
+    <string name="dialog_superuser_access_btn_cancel">下次再说</string>
+    <string name="grant_superuser_access_succ">开始自动安装成功</string>
+    <string name="grant_superuser_access_fail">开始自动安装失败</string>
+
+    <string name="actionbar_personal_center">个人中心</string>
+    <string name="actionbar_setting">设置</string>
+    <string name="actionbar_title_null" />
+    <string name="notification_remind_usr_content">您已经好久没有来看我啦</string>
+    <string name="notification_remind_usr_title">您抛弃我了吗</string>
+
+
+    <!--SlideMenuFragment-->
+    <string name="slide_menu_currency">兔兔币</string>
+    <string name="slide_menu_point">积分</string>
+    <string name="slide_menu_voucher">代金券</string>
+
+    <!--CaptureActivity-->
+    <string name="loading_share_image">正在加载分享图片</string>
+    <string name="loading_share_image_fail">加载分享图片失败</string>
+    <string name="btn_close">关闭</string>
+
+    <string name="notice_center_actionbar_title">通知中心</string>
+
+    <string name="free_store_recomment">免商店推荐</string>
+    <string name="pre_game_size">大小/</string>
+    <string name="exist_free_store">退出免商店</string>
+    <string name="resume">再玩一会</string>
+    <string name="exist_anyway">狠心离开</string>
+    <string name="load_webview_failture">加载网页失败</string>
+
+    <string name="photo_chose_title">选择图片</string>
+    <string name="personal_photo_chose_title">设置头像</string>
+    <string name="personal_photo_camera">拍照</string>
+    <string name="personal_photo_file">从相册中选择</string>
+    <string name="see_detail">查看</string>
+    <string name="remain_spree">剩余:</string>
+    <string name="tao_spree">已淘:</string>
+
+
+    <string name="one_key_bind">绑定</string>
+    <string name="get_verification">免费获取验证码</string>
+    <string name="input_phone">请输入本机号码</string>
+    <string name="input_verification">请输入六位验证码</string>
+
+    <string name="recommend">相关推荐</string>
+    <string name="game_recommend">游戏推荐</string>
+    <string name="game_collection">游戏合集</string>
+    <string name="recommend_hot_collect">热门合集</string>
+
+    <string name="score_point">积分</string>
+    <string name="auto_download_when_wifi">wifi下自动下载</string>
+    <string name="input_right_number">请输入正确的手机号码</string>
+    <string name="bind_success">提交成功</string>
+
+    <string name="binding">绑定中...</string>
+    <string name="get_code_fail">获取验证码失败</string>
+    <string name="bind_fail">绑定失败</string>
+    <string name="personal_option_password">密码修改</string>
+    <string name="personal_option_change_bind">修改免流量手机号</string>
+
+
+    <string name="saving_image">保存图片</string>
+    <string name="preparing_card">准备存储卡</string>
+    <string name="no_storage_card">没有存储卡</string>
+    <string name="not_enough_space">没有足够的存储空间</string>
+    <string name="get_code_again">再次获取(%d)</string>
+    <string name="input_verification_code">请输入验证码</string>
+
+    <string name="personal_update_avatar_succ">修改头像成功</string>
+    <string name="personal_update_avatar_fail">修改头像失败，请您在网络健康时重新尝试一次</string>
+    <string name="personal_name_invalid">您的昵称有不符合法规要求的词汇，请重新修改</string>
+
+    <string name="function_not_work">该功能尚未开启，敬请期待</string>
+
+
+    <!--comment-->
+    <string name="comment_title">评论</string>
+    <string name="comment_title_header">评论 ( %s )</string>
+    <string name="comment_commit_success">提交成功</string>
+    <string name="comment_illegal_character">您的评论有不符合法规要求的词汇，请修改后提交</string>
+    <string name="comment_commit_failed">提交失败</string>
+    <string name="comment_dialog_rating_title">您的评分</string>
+    <string name="comment_dialog_edit_hint">留下点什么</string>
+    <string name="detail_feedback">问题反馈</string>
+    <string name="detail_phone">客服电话</string>
+
+    <string name="forum_title">论坛</string>
+    <string name="forum_post_btn">创建话题</string>
+    <string name="bind_agreement">
+        您必须在使用免流量号码电话卡的设备上使用免商店，才能正常享受免流量服务</string>
+    <string name="cant_connect_network">糟糕，连不上网络！</string>
+    <string name="about_title"><![CDATA[<font color=\'#fb5052\'>免</font><font color=\'#4c4c4c\'>商店</font>]]></string>
+    <string name="about_protocol">
+        <![CDATA[<u><font color=\'#fb5052\'>免商店</font><font color=\'#9e9e9e\'>用户协议</font></u>]]></string>
+    <string name="about_desc">福利多，惊喜多，畅玩就用免商店</string>
+
+    <string name="left_score">剩余积分</string>
+    <string name="dead_line">有效日期 ：</string>
+    <string name="get_way">领取方式</string>
+    <string name="no_data_now">这里好安静呀，出去逛逛吧!</string>
+    <string name="comment_no_data_now">沙发就在你面前,不要犹豫,赶紧评论吧!</string>
+    <string name="retry">重试</string>
+    <string name="empty_back">去逛逛</string>
+    <string name="bad_network">网络不给力哦~</string>
+    <string name="app_recommend">应用推荐</string>
+    <string name="timer_countdown">跳过\n%ds</string>
+    <string name="free_store_copy_right">Copyright ©2014-2016 Snail / All Rights Reserved</string>
+    <string name="please_wait">小免正在努力加载中....</string>
+    <string name="complete">已完成</string>
+    <string name="task_receive_reward">领奖励</string>
+    <string name="unknown_para">未知参数</string>
+    <string name="click_to_upgrade">点击更新</string>
+    <string name="download_dir_not_found">下载失败，请检查内存卡是否正确安装</string>
+    <string name="spree_doubleclick_notify">点击过于频繁，只需点击一次即可领取</string>
+    <string name="unbind_text">修改免流量手机号</string>
+    <string name="unbind">修改</string>
+    <string name="unbind_account">昵称:</string>
+    <string name="current_bind_account">当前免流量手机号:</string>
+    <string name="score_history_get_null">暂无积分获得记录</string>
+    <string name="score_history_used_null">暂无积分使用记录</string>
+    <string name="score_history_hint">
+        &#160;1. 积分是不同于兔兔币外的另一种虚拟货币。\n\n
+        2. 您可以通过完成任务来获取大量的积分。\n\n
+        3. 您也可以通过每日一刮来获得一定的积分。\n\n
+        4. 免商店内还有多处彩蛋可获得积分,寻找吧少年！\n\n
+        5. 积分可以用来兑换各种各样的物品。\n\n
+        6. 积分的
+    </string>
+    <string name="score_history_hint_time">有效期为1年</string>
+    <string name="score_history_hint_time_footer">,注意时间,赶紧使用吧！</string>
+    <string name="currency_history_charge_null">暂无兔兔币获取记录</string>
+    <string name="currency_history_used_null">暂无兔兔币使用记录</string>
+    <!-- 个人中心 积分  -->
+    <string name="score_actionbar">我的积分</string>
+    <string name="score_exchange">前往积分商城</string>
+    <string name="score_get">赚积分</string>
+    <string name="score_used">-%d </string>
+    <string name="score_got">+%d </string>
+
+    <string name="unbind_fail">提交失败</string>
+    <string name="get_bind_number_fail">获取免流量手机号失败</string>
+    <string name="data_loaded">数据加载完成</string>
+    <string name="data_loaded_fail">数据加载异常</string>
+    <string name="unbinding">修改中...</string>
+    <string name="unbind_tips">提示</string>
+    <string name="unbind_success">成功解除免流量手机号</string>
+
+    <string name="mygame">我的游戏</string>
+    <string name="add_my_game">添加</string>
+    <string name="add_game_title">添加游戏</string>
+    <string name="delete_mygame">删除游戏</string>
+    <string name="static_cmcc">中国移动</string>
+    <string name="static_cucc">中国联通</string>
+    <string name="static_ctcc">中国电信</string>
+
+    <string name="update_size_split">/</string>
+    <string name="update_now">立即更新</string>
+    <string name="download_failed_click_to_retry">重新下载</string>
+    <string name="update_self_dialog_tips">wifi环境下更新不到30秒哦~</string>
+    <string name="app_news_title">手游动态</string>
+    <string name="detail_flow_free_hint">免商店将不会为您承担在游戏中更新资源和游戏内广告所产生的流量费用。</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="video_play_error">因为某些原因，视频无法正常播放，小免正在紧急修复中。</string>
+
+    <string name="update_flow">更新所有应用需要流量</string>
+    <string name="update_flow_zero">0 MB</string>
+    <string name="update_num">款应用可更新</string>
+    <string name="save">，省</string>
+    <string name="more_app">...</string>
+    <string name="detail_upgrade_size">大小：</string>
+    <string name="game_spree">礼包</string>
+    <string name="comment_score_header">综合评分</string>
+    <string name="comment_score_foot">人参加</string>
+    <string name="app_des">应用摘要</string>
+    <string name="app_upgrade">更新内容：</string>
+    <string name="forum_header">置顶</string>
+    <string name="limit_length">最大不能超过32个字符</string>
+    <string name="comment_none_hint">请您输入评论内容</string>
+    <string name="comment_reply_alrealy">评论小编已回复，当前不可编辑</string>
+    <string name="go_home_text">立即体验</string>
+    <string name="edit_personal_info">基本信息</string>
+    <string name="personal_privileage">特权</string>
+    <string name="account_safe">账号安全</string>
+    <string name="my_personla_icon">我的头像</string>
+    <string name="my_nickname">我的昵称</string>
+    <string name="snial_account">蜗牛通行证</string>
+    <string name="free_phone_number">免流量手机号码</string>
+    <string name="no_free_telephone_number">暂未开通</string>
+    <string name="password_protect">密码保护</string>
+    <string name="msg_mobile_dont_support_function">您的手机暂不支持此功能</string>
+    <string-array name="province">
+        <item>"北京市"</item>
+        <item>"上海市"</item>
+        <item>"天津市"</item>
+        <item>"重庆市"</item>
+        <item>"黑龙江省"</item>
+        <item>"吉林省"</item>
+        <item>"辽宁省"</item>
+        <item>"内蒙古"</item>
+        <item>"河北省"</item>
+        <item>"山西省"</item>
+        <item>"陕西省"</item>
+        <item>"山东省"</item>
+        <item>"新疆"</item>
+        <item>"西藏"</item>
+        <item>"青海省"</item>
+        <item>"甘肃省"</item>
+        <item>"宁夏"</item>
+        <item>"河南省"</item>
+        <item>"江苏省"</item>
+        <item>"湖北省"</item>
+        <item>"浙江省"</item>
+        <item>"安徽省"</item>
+        <item>"福建省"</item>
+        <item>"江西省"</item>
+        <item>"湖南省"</item>
+        <item>"贵州省"</item>
+        <item>"四川省"</item>
+        <item>"广东省"</item>
+        <item>"云南省"</item>
+        <item>"广西省"</item>
+        <item>"海南省"</item>
+        <item>"香港"</item>
+        <item>"澳门"</item>
+        <item>"台湾"</item>
+
+    </string-array>
+
+    <!-- Engine -->
+    <string name="user_root_0">Android系统</string>
+    <string name="user_system_1000">Android系统</string>
+    <string name="user_media_1013">媒体服务</string>
+    <string name="user_unknown">未知</string>
+
+    <string name="have_deleted">(已卸载)</string>
+    <string name="mobile">移动网络</string>
+    <string name="unit_mb">单位:MB</string>
+    <string name="unit_hour">单位:h</string>
+    <string name="no_data">暂无数据</string>
+    <string name="traffic_total">本月总计</string>
+    <string name="shortcut_name">一键清理 </string>
+    <string name="summary_title">%d月流量使用情况</string>
+    <string name="wifi_cost_subtitle">WIFI流量</string>
+    <string name="mobile_cost_subtitle">手机流量</string>
+    <string name="time_bucket_title">%d月流量使用详情</string>
+    <string name="netowrk_control_title">联网控制</string>
+    <string name="dont_have_root">您的手机尚未ROOT，无法使用此功能</string>
+    <string name="save_for_you">为您节省</string>
+    <string name="dont_have_iptable">您的手机不支持此功能</string>
+    <string name="mobile_cost">移动网络消耗：</string>
+    <string name="avail_memory">可用内存：</string>
+    <string name="traffic_month_app_detail">本月应用使用详情</string>
+    <string name="traffic_month_detail">本月流量使用情况</string>
+    <string name="traffic_data_right_hint">友情提示：以上流量数据统计仅供参考，实际消耗流量以运营商统计为准。</string>
+    <string name="traffic_today_mobile_str">今日移动数据总计</string>
+    <string name="traffic_today_wifi_total_str">今日WIFI数据总计</string>
+
+    <string name="traffic_no_data_hint">当前尚未统计到您本月使用了%s流量</string>
+    <string name="traffic_data_hint_mobile">移动数据</string>
+    <string name="traffic_data_hint_wifi">WIFI数据</string>
+
+    <string name="traffic_root_function_open">已启用精准流量统计功能</string>
+    <string name="traffic_root_function_close">未启用精准流量统计功能</string>
+    <string name="traffic_control_hint">使用此功能请不要禁用开机启动</string>
+
+    <!-- Engine end -->
+
+    <!-- 免流量专区 -->
+    <string name="free_area">免流量体验区</string>
+    <string name="continue_download">继续下载</string>
+    <string name="free_area_alert">当前您所在的地区运营商 %s 暂不支持免流量下载，继续下载将会消耗流量。</string>
+    <string name="free_area_alert2">您还未开通免流量体验，继续下载将消耗流量。</string>
+    <string name="free_area_alert3">您的免流量体验已到期，继续下载将消耗流量。</string>
+
+    <string name="account_quit_confirm">确定退出此账号吗？</string>
+    <!--任务-->
+    <string name="my_task">我的任务</string>
+    <string name="begin_task">未完成</string>
+    <string name="task_go_work">去完成</string>
+    <string name="score_effective_time">有效期至:</string>
+    <string name="score_total_num">总获得: %s积分</string>
+    <string name="personal_task_receive_success">领取成功</string>
+    <string name="personal_task_receive_failed">领取失败</string>
+    <string-array name="task_titles">
+        <item>普通任务</item>
+        <item>每周任务</item>
+    </string-array>
+    <string name="no_pic_app">您当前的手机不支持从相册中选择头像</string>
+    <string name="exp_string">经验</string>
+    <string-array name="persional_center_array">
+        <item>会员中心</item>
+        <item>福利码</item>
+        <item>我的任务</item>
+        <item>每日一刮</item>
+        <item>我的订单</item>
+        <item>我的购物车</item>
+        <item>收货地址</item>
+        <item>我的礼包</item>
+        <item>我的免卡</item>
+        <item>商店设置</item>
+    </string-array>
+    <string-array name="persional_mywallet_array">
+        <item>我的兔兔币</item>
+        <item>我的代金券</item>
+        <item>我的积分</item>
+    </string-array>
+    <string name="persional_my_wallet">我的钱包</string>
+    <string name="personal_my_wallet_footer">代金券、兔兔币等</string>
+    <string-array name="rank_country_lists">
+        <item>中国</item>
+    </string-array>
+    <string-array name="feed_type_array">
+        <item>畅销</item>
+        <item>付费</item>
+        <item>免费</item>
+    </string-array>
+
+    <!--扫描二维码-->
+    <string name="scanner">扫描二维码</string>
+    <string name="scanner_tips1">将取景框对准二维码</string>
+    <string name="scanner_tips2">即可自动扫描</string>
+    <string name="scan_result">扫描结果</string>
+    <string name="camer_error">无法获取摄像头数据</string>
+    <string name="upgrade_content_title">更新内容:</string>
+    <string name="upgrade_show_ignore">查看已忽略的更新</string>
+    <string name="upgrade_des_empty">暂未添加更新内容</string>
+    <string name="rank_order">预约</string>
+    <string name="rank_ordered">已预约</string>
+    <string name="rank_from">数据来自苹果 App Store 排行榜</string>
+    <string name="rank_filter">筛选</string>
+    <string name="rank_update">更新于 %s</string>
+    <string name="personal_nick_null_hint">昵称不可为空</string>
+    <string name="rank_filter_type">请选择搜索类型</string>
+    <string name="rank_best_shell">畅销</string>
+    <string name="rank_filter_area">请选择搜索地区</string>
+    <string name="china">中国</string>
+    <string name="user_name_edit">修改</string>
+    <string name="order_success">预约成功</string>
+    <string name="wait_your_order">请耐心等待应用上架</string>
+    <string name="i_know">知道了</string>
+    <string name="no_rate">暂无评分</string>
+    <string name="order_hint">当前排行榜数据源于苹果商店，该应用暂无安卓版，请您耐心等待应用上架。</string>
+
+    <string-array name="personal_score_history_titles">
+        <item>获取记录</item>
+        <item>使用记录</item>
+    </string-array>
+
+    <string-array name="personal_currency_history_titles">
+        <item>充值记录</item>
+        <item>使用记录</item>
+    </string-array>
+    <string name="score_introduce">介绍</string>
+    <string name="score_for_exchange">%d积分</string>
+
+    <!--分享-->
+    <string name="share_to">分享应用到</string>
+    <string name="wechat_friend">微信好友</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="wechat_friend_group">朋友圈</string>
+    <string name="more">更多</string>
+
+    <!--文件大小-->
+    <string name="byteShort">B</string>
+    <string name="kilobyteShort">KB</string>
+    <string name="megabyteShort">MB</string>
+    <string name="gigabyteShort">GB</string>
+    <string name="terabyteShort">TB</string>
+    <string name="petabyteShort">PB</string>
+    <!-- 用于添加一个后缀“KB”或“MB”数字格式字符串，在千字节，显示尺寸兆字节，或其他大小的单位。 -->
+    <string name="fileSizeSuffix"><xliff:g example="123" id="number">%1$s</xliff:g><xliff:g example="KB" id="unit">%2$s</xliff:g></string>
+
+    <string name="spree_popup_hint">您确认需要花费%s兑换游戏礼包</string>
+    <string name="spree_space">0</string>
+    <string name="spree_local_app_none">您本机上安装的游戏暂时没有礼包</string>
+    <string name="spree_title_frame">【%s】</string>
+    <string name="spree_more">更多礼包</string>
+    <string-array name="spree_tab_array">
+        <item>热门礼包</item>
+        <item>会员专享</item>
+        <item>全部礼包</item>
+        <item>已安装游戏</item>
+    </string-array>
+
+    <!-- 代金券 -->
+    <string name="my_voucher_deadline">截至%s</string>
+    <string name="voucher_cooper_total">总计金额</string>
+    <string name="voucher_cooper_used">使用金额</string>
+    <string name="voucher_cooper_available">可用金额</string>
+    <string name="yuan_char">¥</string>
+    <string name="yuan">元</string>
+    <string name="voucher_cooper_use_tip">使用说明：</string>
+    <string name="voucher_cooper_coopergame">支持游戏</string>
+    <string name="my_voucher_no_data">暂时还没有代金券</string>
+    <string name="my_voucher_overtime">您有%s张代金券再不用就过期了</string>
+    <string name="voucher_detail_title">使用详情</string>
+    <string name="voucher_detail_records">暂无使用记录</string>
+    <!--dialog title-->
+    <string name="voucher_notify_goto">前往查看</string>
+    <string name="detail_introduce">介绍</string>
+    <string name="detail_spree">礼包</string>
+    <string name="detail_comment">评论</string>
+    <string name="detail_bbs">论坛</string>
+    <string name="currency_history_hint">  小提示：您的免卡充值记录可能未显示在列表中，如有问题请联系10040.</string>
+    <string name="spree_get_error">领取失败,请再试一次</string>
+    <string name="spree_tao_error">淘号失败,请再试一次</string>
+
+    <string name="flow_open_guide">开通特权更多应用下载免流量</string>
+    <string name="flow_open_btn">开通\n特权</string>
+    <string name="flow_total_flow_title">流量总计</string>
+    <string name="flow_close_time_title">到期时间</string>
+    <string name="flow_open_time_title">开通时间</string>
+<string name="flow_free_guide">1. 体验期内您只有下载免流量体验区内的应用才可以免流量;\n
+    2. 您可以开通免流量特权，所有应用下载免流量；</string>
+<string name="flow_free_guide_2">
+    3. 您必须在使用免流量号码电话卡的设备上使用免商店，才能正常享受免流量服务；\n
+    4. 移动支持2/3/4G网络制式，联通，电信支持3G网络制式.\n</string>
+    <string name="flow_free_open">立即开通>>\n</string>
+    <string name="flow_free_download">体验区游戏免流量下载</string>
+    <string name="flow_free_ignore">温馨提示</string>
+    <string name="flow_free_dialog_ok">我知道了</string>
+    <string name="jump">跳过</string>
+    <string name="one_key_download">一键下载(%s)</string>
+    <string name="please_select_at_least_one_app">请至少选择一款应用下载</string>
+    <string name="necessary_app">装机必备</string>
+    <string name="no_wifi_tips">观看视频将会消耗大量流量，建议您在wifi下观看</string>
+    <string name="just_now">刚刚刷新</string>
+    <string name="minute_ago">分钟前刷新</string>
+    <string name="hour_ago">小时前刷新</string>
+    <string name="day_ago">天前刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="bind_phone">确定</string>
+    <string name="bind_phone_number_for_free">输入免流量手机号</string>
+    <string name="detail_comment_reply">小编回复:</string>
+    <string name="space">&#160;</string>
+    <string name="webview_upload_failed">上传失败</string>
+    <string name="hot_search">大家都在搜</string>
+    <!--管理-->
+    <string name="manage">管理</string>
+    <string name="score_low_tips">手机运行缓慢，您的手机需要清理了</string>
+    <string name="score_normal_tips"> 手机运行正常，建议您清理一下加速运行</string>
+    <string name="score_high_tips">手机状态完美，请继续保持</string>
+    <string name="in_speed_up">正在加速中</string>
+    <string name="has_scored_memoary">已加速%s内存</string>
+    <string name="app_update">应用更新</string>
+    <string name="fen">分</string>
+    <string name="have_updated">已更新</string>
+    <string name="app_no_update">您所有的应用都是最新的</string>
+    <string name="num_people_ten_thousand_update">%s万人</string>
+    <string name="num_people_update">%s人</string>
+    <string name="order_new_spree">预约新礼包</string>
+    <string name="spree_ordered">取消预约</string>
+    <string name="order_fail">预约失败</string>
+    <string name="cancle_order_fail">取消预约失败</string>
+    <string name="cancle_order_success">取消预约成功</string>
+    <string name="setting_app_auto_install_dialog_title">开启 [免商店自动装]</string>
+    <string name="setting_app_auto_install_dialog_content">开启功能需要你授权确认，本功能不会带来任何风险。</string>
+
+    <!--会员中心-->
+    <string name="member_center">会员中心</string>
+    <string name="introduce">介绍</string>
+    <string name="current_member_point">当前会员点</string>
+    <string name="next_level">下一等级</string>
+    <string name="member_center_tips">会员点获得请点击会员介绍</string>
+    <string name="upgrade_member_level">还差%s会员点升级</string>
+    <string name="stay_tuned">敬请期待</string>
+    <string name="current_level_is_top">当前已是最高会员等级</string>
+
+    <string-array name="manage_grid_offline_array">
+        <item>流量统计</item>
+        <item>联网控制</item>
+        <item>应用管理</item>
+        <item>推荐好友</item>
+    </string-array>
+
+    <string name="autho_fail_alert">授权失败，请在免商店中再登录一次后参与活动</string>
+    <string name="current_version_not_support">当前版本暂不支持该功能，请在设置中检测更新最新版免商店</string>
+    <string name="double_click_alert">点击过于频繁，只需点击一次</string>
+
+
+    <string name="store_goods_default_order">默认排序</string>
+    <string name="store_goods_price_order_title">价格</string>
+    <string name="store_goods_recharge_header">代充</string>
+    <string name="store_goods_recharge_footer">折起</string>
+    <string name="store_goods_storage">剩余%s件</string>
+    <string name="store_goods_mark_price">原价￥%s</string>
+    <string name="store_point_store_title">积分商城</string>
+    <string name="store_recharge_title">虚拟代充</string>
+    <string name="store_goods_sales">已售出%s件</string>
+    <string name="store_point_select_1">0~100</string>
+    <string name="store_point_selecter_2">100~500</string>
+    <string name="store_point_selector_3">500~2000</string>
+    <string name="store_point_selector_4">2000以上</string>
+    <string name="store_goods_need_vip_level">V%d专享</string>
+    <string name="personal_birthday_title">我的生日</string>
+    <string name="personal_content_empty">未填写</string>
+    <string name="member_level_spree_member_special">用户专享</string>
+    <string name="member_unlogin_hint">您还未登录, 登录后可查看会员价。</string>
+    <string name="member_unmember_hint">您还不是会员, 成为会员可享受优惠折扣。</string>
+    <string name="member_discounts_level_">等级</string>
+    <string name="member_discounts">折扣</string>
+    <string name="member_beishu">倍数</string>
+    <string name="member_discount_footer">折</string>
+    <string name="member_bei_footer">倍</string>
+    <string name="member_copy_customer_number">复制客服号码</string>
+    <string name="member_valid_date">有效期至：</string>
+
+    <string-array name="store_vir_recharge_title">
+        <item>热门游戏</item>
+        <item>全部游戏</item>
+    </string-array>
+
+    <string-array name="store_point_store_title">
+        <item>热门积分商品</item>
+        <item>全部积分商品</item>
+    </string-array>
+
+    <string name="member_task_exp">%1$s会员额外加%2$s积分</string>
+    <string name="member_introduce">特权介绍</string>
+    <string name="member_level_spree_get_success">您已成功领取等级礼包,请至个人中心查看</string>
+    <string name="member_game_vourcher_get_success">您已成功领取代金券，请至个人中心查看!</string>
+    <string name="member_needlevel_hint">您暂未获得此特权~</string>
+    <string name="goto_bind_phone">去绑定</string>
+    <string name="member_game_voucher_emtpy_hint">当前没有可领取的代金券~</string>
+    <string name="personal_birthday_set_failed">生日设置失败</string>
+    <string name="personal_user_birthday_selected_title">选择生日</string>
+    <string name="personal_birthday_changed_hint">请仔细核对填写信息,提交后不可修改~</string>
+    <string name="personal_birthday_invaild_changed">如需修改生日请联系客服~</string>
+    <string name="personal_birthday_dialog_cancel">放弃</string>
+
+    <string name="home_test_new_app">测新游</string>
+    <string name="home_app_title">软件</string>
+    <string name="home_mobile_loading">数据加载中,请稍后...</string>
+    <string name="home_mobile_failed">请求失败，请尝试刷新</string>
+    <string name="home_mobile_maintenance">系统维护中,给您带来的不便敬请谅解.</string>
+    <string name="home_mobile_hor_line">——</string>
+
+    <string name="news_actionbar_title">资讯</string>
+    <string name="news_my_channel_title">我的栏目/排序删除</string>
+
+    <string name="btn_sure">确定</string>
+    <string name="news_ignore_num_title">已选%d个理由</string>
+    <string name="news_ignore_other">其他</string>
+    <string name="news_no_interest">不感兴趣</string>
+    <string name="news_dialog_title">选择不感兴趣的理由</string>
+    <string name="news_dialog_tip">我们将会减少此类资讯的推荐</string>
+    <string name="news_channel_min_channel_count">所选频道总数不得少于3</string>
+    <string name="news_top">置顶</string>
+    <string name="news_adv">广告</string>
+
+    <string name="date_just_now">刚刚</string>
+    <string name="date_several_minutes_ago">%d分钟前</string>
+    <string name="date_several_hours_ago">%d小时前</string>
+    <string name="date_several_days_ago">%d天前</string>
+    <string name="get_gift">抢先领取</string>
+    <string name="channel_app_in_home">进入\n免商店</string>
+    <string name="channel_app_download_error">下载失败</string>
+
+    <string name="friend_title">朋友</string>
+    <string name="friend_add">添加</string>
+    <string name="friend_receive">接受</string>
+    <string name="friend_reject">拒绝</string>
+    <string name="friend_search_account_hint">请输入搜索的蜗牛通行证或昵称</string>
+    <string name="friend_contact_title">手机联系人</string>
+    <string name="friend_contact_hint">添加通讯录中的好友</string>
+    <string name="friend_apply_title">好友申请</string>
+    <string name="friend_my_friend_title">我的朋友</string>
+    <string name="friend_recommend_title">暂时还没有朋友哦~</string>
+    <string name="friend_recommend_hint">为您推荐以下好友~</string>
+    <string name="friend_game_title">"最近在玩: %s"</string>
+    <string name="friend_game_none_hint">没玩过任何游戏</string>
+    <string name="friend_play_game_title">最近在玩</string>
+    <string name="friend_play_game_none_title">最近</string>
+    <string name="friend_search_none">未搜索到该用户</string>
+    <string name="friend_receive_failed">接受失败，请稍后重试！</string>
+    <string name="friend_add_failed">朋友申请发送失败，请稍后重试！</string>
+    <string name="friend_reject_failed">拒绝失败，请稍后重试！</string>
+    <string name="friend_receive_sucess">已成功添加朋友</string>
+    <string name="friend_add_success">已发送朋友申请</string>
+    <string name="friend_reject_success">已拒绝朋友申请</string>
+    <string name="friend_game_list_title">好友正在玩</string>
+    <string name="friend_recommend_none_hint">暂无推荐好友</string>
+    <string name="friend_del_success">好友删除成功</string>
+    <string name="friend_del_failed">好友删除失败</string>
+    <string name="del_friend">删除好友</string>
+    <string name="del_friend_tip">您确定删除该好友?</string>
+    <string name="friend_contact_none">您的通讯录中没人使用免商店</string>
+    <string name="friend_add_sended">已发送好友申请</string>
+    <string name="friend_recommend_add_none">推荐的好友已经被你加完了！</string>
+    <string name="friend_added">已添加</string>
+    <string name="user_level">%s会员</string>
+
+</resources>
+
+

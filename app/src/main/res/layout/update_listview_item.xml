@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_8dp"
+    android:paddingRight="@dimen/dimen_8dp"
+    android:paddingTop="@dimen/dimen_14dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <include
+            android:id="@+id/imgApp"
+            layout="@layout/simple_image_normal"
+            android:layout_width="@dimen/item_app_logo_small"
+            android:layout_height="@dimen/item_app_logo_small"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/imgApp">
+
+            <TextView
+                android:id="@+id/text_update"
+                style="@style/CustomBtnStyle"
+                android:layout_width="@dimen/download_btn_width"
+                android:layout_height="@dimen/download_btn_height"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_green_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/list_item_update"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvAppLabel"
+                style="@style/AppTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvVersionSize"
+                style="@style/AppVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvAppLabel"
+                android:layout_below="@id/tvAppLabel"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/text_update"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_little" />
+
+            <TextView
+                android:id="@+id/tvNewVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvVersionSize"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/general_text_color"
+                android:textSize="@dimen/text_size_little" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/upgrade_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/tv_upgrade_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxWidth="250dp"
+                android:singleLine="true"
+                android:text="@string/upgrade_content_title"
+                android:textColor="@color/text_gray_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/arrows_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:paddingBottom="@dimen/dimen_14dp"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingRight="@dimen/dimen_20dp"
+                android:src="@drawable/ic_extend_down" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/expandableContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_upgrade_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:padding="@dimen/item_margin"
+                android:textColor="@color/text_gray_light"
+                android:textSize="@dimen/text_size_little" />
+
+            <TextView
+                android:id="@+id/tv_ignore"
+                android:layout_width="@dimen/download_btn_width"
+                android:layout_height="@dimen/download_btn_height"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/dimen_14dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/ab_btn_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/list_item_ignore"
+                android:textColor="@color/text_gray_light"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

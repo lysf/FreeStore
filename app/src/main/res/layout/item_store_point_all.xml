@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <include
+        android:id="@+id/siv_goods_icon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:layout_toRightOf="@id/siv_goods_icon"
+        android:maxLines="2"
+        android:textColor="@color/primary_text_color"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tv_goods_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@id/siv_goods_icon"
+        android:textColor="@color/red"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_goods_reduce_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_toRightOf="@id/tv_goods_point"
+        android:textColor="@color/primary_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_goods_ordinary_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_toRightOf="@id/tv_goods_reduce_price"
+        android:textColor="@color/second_text_color" />
+
+    <TextView
+        android:id="@+id/tv_goods_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_12dp"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@id/siv_goods_icon"
+        android:textColor="@color/general_text_color"
+        android:textSize="10sp" />
+
+    <include layout="@layout/common_horizontal_line" />
+</RelativeLayout>

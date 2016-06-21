@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:text="@string/setting_app_auto_install_dialog_title"
+        android:textColor="@color/primary_text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_48dp"
+        android:layout_marginRight="@dimen/dimen_48dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/setting_app_auto_install_dialog_content"
+        android:textColor="@color/general_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_know"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_green_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/i_know"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>
+

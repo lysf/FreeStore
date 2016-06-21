@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/rank_from"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:gravity="center_vertical"
+            android:text="@string/rank_from"
+            android:textColor="@color/search_history_hot_title_color"
+            android:textSize="12sp"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="@dimen/dimen_12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:layout_toRightOf="@id/rank_from"
+            android:background="@color/list_view_divider_color"
+
+            />
+
+        <TextView
+            android:id="@+id/rank_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/divider"
+            android:text="@string/rank_update"
+            android:textColor="@color/progress_bar_green"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/rank_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:drawableLeft="@drawable/ic_rank_extend_down"
+            android:drawablePadding="@dimen/dimen_6dp"
+            android:text="@string/rank_filter"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <com.snailgame.cjg.common.widget.LoadMoreListView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_layout"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"/>
+</RelativeLayout>

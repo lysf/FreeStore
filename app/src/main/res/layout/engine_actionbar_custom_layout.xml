@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/red"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@id/engine_ab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:textColor="@color/actionbar_title_color"
+        android:drawableLeft="@drawable/ic_back_normal"
+        android:drawableStart="@drawable/ic_back_normal"
+        android:background="@drawable/engine_ab_btn_selector"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:drawablePadding="@dimen/dimen_16dp"
+        android:textSize="@dimen/action_bar_title_size"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingRight="10dp" />
+
+</RelativeLayout>

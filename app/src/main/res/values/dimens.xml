@@ -1,0 +1,234 @@
+<resources>
+
+    <dimen name="btn_font_36">10sp</dimen>
+    <dimen name="radio_btn_padding">5dp</dimen>
+    <dimen name="discount">10sp</dimen>
+
+    <!-- Notification template -->
+    <dimen name="notification_action_padding">8.0dip</dimen>
+    <dimen name="notification_action_height">48.0dip</dimen>
+    <dimen name="notification_action_width">48.0dip</dimen>
+
+
+    <!--appinfo_list_item-->
+    <dimen name="item_margin">8dp</dimen>
+    <dimen name="item_padding">8dp</dimen>
+    <dimen name="app_logo_label_size">28dp</dimen>
+    <dimen name="item_app_logo_margin">8dp</dimen>
+    <dimen name="download_progress_bar_height">3dp</dimen>
+    <dimen name="download_btn_width">60dp</dimen>
+    <dimen name="download_btn_height">26dp</dimen>
+    <dimen name="download_btn_margin_left">8dp</dimen>
+    <dimen name="download_btn_margin_right">8dp</dimen>
+    <dimen name="prepare_download_progressbar_width">24dp</dimen>
+    <dimen name="prepare_download_progressbar_height">24dp</dimen>
+    <dimen name="prepare_download_progressbar_margin_right">34dp</dimen>
+    <dimen name="play_item_app_logo">70dp</dimen>
+
+
+    <!--actionbar-->
+    <dimen name="action_bar_icon_width">48dp</dimen>
+    <dimen name="action_bar_icon_height">48dp</dimen>
+    <dimen name="action_bar_title_size">18sp</dimen>
+
+    <!--activity_app_search-->
+    <dimen name="app_search_gird_margin_left">12dp</dimen>
+    <dimen name="search_padding_top">24dp</dimen>
+    <dimen name="search_keyword_height">200dp</dimen>
+    <dimen name="search_keyword_margin_top">24dp</dimen>
+    <dimen name="search_keyword_margin_bottom">30dp</dimen>
+    <dimen name="search_history_title_margin_top">224dp</dimen>
+
+    <dimen name="search_history_item_height">48dp</dimen>
+    <dimen name="search_page_margin">16dp</dimen>
+
+
+    <!--app_forum-->
+
+    <dimen name="app_common_dialog_padding">8dp</dimen>
+    <dimen name="app_common_dialog_padding_top">10dp</dimen>
+
+
+    <!--app_sort_item-->
+    <dimen name="app_sort_item_height">110dp</dimen>
+    <dimen name="app_sort_item_title_size">20sp</dimen>
+    <dimen name="app_sort_item_title_margin_left">10dp</dimen>
+
+
+    <!--collection_item-->
+
+
+    <!--company_detail_header-->
+    <dimen name="company_header_image_height">150dp</dimen>
+
+    <!--  content_frame_divider-->
+    <dimen name="content_frame_radio_text_size">12sp</dimen>
+    <!--detail_activity_bottom_menu-->
+    <dimen name="bottom_layout_padding_left">16dp</dimen>
+    <dimen name="bottom_layout_padding_right">16dp</dimen>
+    <dimen name="bottom_btn_state_download_width">240dp</dimen>
+    <dimen name="bottom_btn_state_download_height">40dp</dimen>
+    <dimen name="bottom_btn_state_download_size">16sp</dimen>
+    <dimen name="loading_for_btn_size">92dp</dimen>
+
+
+    <!-- 搜索关键字随机字体大小 -->
+    <dimen name="keyword_size_16">16sp</dimen>
+    <dimen name="keyword_size_20">20sp</dimen>
+    <dimen name="keyword_padding_width">30dp</dimen>
+    <dimen name="keyword_padding_height">20dp</dimen>
+    <dimen name="keyword_padding_random">20dp</dimen>
+
+    <!-- 新手卡相关 -->
+    <dimen name="novicecard_item_height">40dp</dimen>
+    <dimen name="home_divider_height">0.5dp</dimen>
+    <dimen name="divider_height">1px</dimen>
+
+
+    <!--标签栏-->
+    <dimen name="tab_height">43dp</dimen>
+    <!--游戏图标的大小-->
+    <dimen name="item_app_logo">70dp</dimen>
+    <dimen name="item_app_logo_small">60dp</dimen>
+    <!-- banner高度-->
+    <dimen name="banner_height">154dp</dimen>
+    <dimen name="home_banner_height">196dp</dimen>
+
+    <!--字体大小 大：18sp 正常14sp 小12sp-->
+    <dimen name="text_size_big">18sp</dimen>
+    <dimen name="text_size_normal_p">16sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_little">12sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+
+    <!--小广告位高度-->
+    <dimen name="little_banner_height">70dp</dimen>
+    <!--提示文字背景高度-->
+    <dimen name="tips_bg_height">24dp</dimen>
+    <!--积分 积分墙 -->
+    <dimen name="small_list_item_height">90dp</dimen>
+    <dimen name="small_list_item_icon_size">60dp</dimen>
+
+    <!--礼包列表的高度-->
+    <dimen name="spree_item_height">100dp</dimen>
+    <!--积分墙列表的高度-->
+    <dimen name="score_item_height">110dp</dimen>
+
+    <!-- Engine -->
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="recycleview_height">210dp</dimen>
+    <dimen name="progressbar_height">114dp</dimen>
+    <dimen name="progressbar_width">18dp</dimen>
+    <dimen name="dimen_6dp">6dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_14dp">14dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_21dp">21dp</dimen>
+    <dimen name="dimen_22dp">22dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_26dp">26dp</dimen>
+    <dimen name="dimen_28dp">28dp</dimen>
+    <dimen name="dimen_32dp">32dp</dimen>
+    <dimen name="dimen_34dp">34dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="dimen_84dp">84dp</dimen>
+    <dimen name="item_app_height">70dp</dimen>
+    <dimen name="item_app_icon_size">48dp</dimen>
+    <dimen name="app_rank_item_cost_width">72dp</dimen>
+
+    <dimen name="pager_tab_height">48dp</dimen>
+    <dimen name="privilege_margin_right">8dp</dimen>
+    <dimen name="page_title_margin_right">90dp</dimen>
+    <dimen name="divider_width">1dp</dimen>
+    <dimen name="home_screenshot_height">198dp</dimen>
+
+    <dimen name="personal_currency_padding">18dp</dimen>
+    <dimen name="personal_score_history_header_height">256dp</dimen>
+
+    <dimen name="detail_tips_bg_height">38dp</dimen>
+    <dimen name="detail_item_app_logo">70dp</dimen>
+    <dimen name="detail_header_with_tab_height">250dp</dimen>
+    <dimen name="detail_header_height">206dp</dimen>
+    <dimen name="detail_header_translate_height">158dp</dimen>
+    <dimen name="dimen_30dp">30dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimen_18dp">18dp</dimen>
+    <dimen name="comment_btn_height">60dp</dimen>
+
+    <dimen name="app_list_item_height_small">90dp</dimen>
+    <dimen name="list_divider_height">8dp</dimen>
+
+    <dimen name="dialog_icon_padding">8dp</dimen>
+    <dimen name="dialog_title_padding">10dp</dimen>
+
+    <dimen name="collection_header_image_height">216dp</dimen>
+
+    <!--pulltorefresh-->
+    <dimen name="bottom_tab_height">60dp</dimen>
+    <dimen name="app_list_item_height">106dp</dimen>
+    <dimen name="game_detail_screenshot_width">108dp</dimen>
+    <dimen name="game_detail_screenshot_height">178dp</dimen>
+    <dimen name="dimen_49dp">49dp</dimen>
+    <dimen name="common_btn_corners">30dp</dimen>
+    <dimen name="search_init_position">173dp</dimen>
+    <dimen name="search_view_margin_top">167dp</dimen>
+    <dimen name="dimen_36dp">36dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="red_point_size">8dp</dimen>
+    <dimen name="dimen_88dp">88dp</dimen>
+    <dimen name="toolbar_search_view_left_right_padding">108dp</dimen>
+    <dimen name="toolbar_search_view_padding_left">60dp</dimen>
+    <dimen name="toolbar_avatar_size">28dp</dimen>
+    <dimen name="download_progress_margin_right">88dp</dimen>
+    <dimen name="dimen_98dp">98dp</dimen>
+    <dimen name="dimen_55dp">55dp</dimen>
+    <dimen name="dimen_70dp">70dp</dimen>
+    <dimen name="dimen_72dp">72dp</dimen>
+    <dimen name="module_header_height">52dp</dimen>
+    <dimen name="dimen_78dp">78dp</dimen>
+    <dimen name="dimen_54dp">54dp</dimen>
+    <dimen name="dimen_68dp">68dp</dimen>
+    <dimen name="common_item_layout_margin">20dp</dimen>
+    <dimen name="inner_item_layout_margin_top">18dp</dimen>
+    <dimen name="dimen_47dp">47dp</dimen>
+    <dimen name="dimen_64dp">64dp</dimen>
+    <dimen name="dimen_82dp">82dp</dimen>
+    <dimen name="home_top_view_height">224dp</dimen>
+
+    <dimen name="round_corner_radius">4dp</dimen>
+
+
+    <dimen name="dialog_width">320dp</dimen>
+    <dimen name="dialog_little_height">48dp</dimen>
+    <dimen name="dialog_content_top_margin">@dimen/dimen_28dp</dimen>
+    <dimen name="dialog_content_bottom_margin">@dimen/dimen_28dp</dimen>
+    <dimen name="dialog_content_between_margin">@dimen/dimen_14dp</dimen>
+    <dimen name="dialog_sides_margin">@dimen/dimen_16dp</dimen>
+
+    <dimen name="dialog_bottom_height">58dp</dimen>
+    <dimen name="dialog_bottom_button_height">38dp</dimen>
+    <dimen name="dialog_bottom_bottom_margin">@dimen/dimen_20dp</dimen>
+    <dimen name="dialog_top_top_margin">@dimen/dimen_20dp</dimen>
+    <dimen name="personal_user_info_layout_height_normal">198dp</dimen>
+    <dimen name="personal_user_info_layout_height_large">214dp</dimen>
+    <dimen name="member_center_header_height">280dp</dimen>
+    <dimen name="member_detail_header_height">256dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="dimen_110dp">110dp</dimen>
+    <dimen name="dimen_52dp">52dp</dimen>
+    <dimen name="dimen_57dp">57dp</dimen>
+    <dimen name="dimen_100dp">100dp</dimen>
+    <dimen name="dimen_180dp">180dp</dimen>
+    <dimen name="dimen_9dp">9dp</dimen>
+</resources>

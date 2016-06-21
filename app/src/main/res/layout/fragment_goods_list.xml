@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/unlogin_hint_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_36dp"
+        android:background="@color/color_ffeeee"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingRight="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/tv_unlogin_hint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/goods_header_broast"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="@string/member_unlogin_hint"
+            android:textColor="@color/btn_yellow_normal"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_unlogin_hint_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dimen_8dp"
+            android:scaleType="center"
+            android:src="@drawable/goods_header_brocast_close" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_default_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/store_goods_default_order"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_sort_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/ic_goods_order_default"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/store_goods_price_order_title"
+            android:textColor="@color/general_text_color"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:background="@color/common_line_color" />
+
+        <ImageView
+            android:id="@+id/iv_show_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ab_btn_selector"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:src="@drawable/ic_goods_show_small" />
+    </RelativeLayout>
+
+    <include layout="@layout/common_horizontal_line" />
+
+    <include layout="@layout/load_more_listview_gap_container" />
+</LinearLayout>

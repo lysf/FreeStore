@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dimen_10dp"
+    android:layout_marginRight="@dimen/dimen_10dp"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/iv_voucher_popup_img"
+        layout="@layout/simple_image"
+        android:layout_width="match_parent"
+        android:layout_height="103dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/iv_voucher_popup_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/mini_margin_3"
+            android:maxLines="3"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@id/iv_voucher_popup_msg"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/go_home_btn_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/voucher_popup_dialog_btn_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/voucher_notify_goto"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_big" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

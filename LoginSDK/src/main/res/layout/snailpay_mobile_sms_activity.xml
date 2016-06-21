@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/snailpay_mobile_sms_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical" 
+    android:focusable="true"
+    android:focusableInTouchMode="false">
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/snailpay_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/snailpay_mobile_sms_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:baselineAligned="false" >
+
+        <FrameLayout
+            android:id="@+id/snailpay_mobile_sms_tab1_fragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/snailpay_mobile_sms_tab1_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center" >
+	            <TextView
+	                android:id="@+id/snailpay_mobile_sms_tab1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+	                android:textSize="16sp" 
+	                android:focusable="true"
+		            android:focusableInTouchMode="false"
+		            android:background="@drawable/snail_graybg_selector"/>
+	
+	            <ImageView
+	                android:id="@+id/snailpay_mobile_sms_img1"
+	                android:layout_width="match_parent"
+	                android:layout_height="2dp"
+	                android:layout_gravity="center_horizontal"
+	                android:background="@drawable/snailpay_indicator" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/snailpay_mobile_sms_tab3_fragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/snailpay_mobile_sms_tab3_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center" >
+	            <TextView
+	                android:id="@+id/snailpay_mobile_sms_tab3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+	                android:textSize="16sp" 
+	                android:focusable="true"
+		            android:focusableInTouchMode="false"
+		            android:background="@drawable/snail_graybg_selector"/>
+	
+	            <ImageView
+	                android:id="@+id/snailpay_mobile_sms_img3"
+	                android:layout_width="match_parent"
+	                android:layout_height="2dp"
+	                android:layout_gravity="center_horizontal"
+	                android:background="@drawable/snailpay_indicator" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/snailpay_mobile_sms_tab2_fragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:paddingRight="8dp">
+
+            <LinearLayout
+                android:id="@+id/snailpay_mobile_sms_tab2_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center" >
+            <TextView
+                android:id="@+id/snailpay_mobile_sms_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp" 
+                android:focusable="true"
+	            android:focusableInTouchMode="false"
+	            android:background="@drawable/snail_graybg_selector"/>
+
+            <ImageView
+                android:id="@+id/snailpay_mobile_sms_img2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/snailpay_indicator" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dp" >
+
+        <LinearLayout
+            android:id="@+id/snailpay_mobile_sms_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                >
+	            <TextView
+	                android:id="@+id/snailpay_mobile_sms_text_gridlab"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#9b9b9b" />
+	            <View android:layout_width="fill_parent"
+	                android:layout_height="1dp"
+	                android:background="#e0e0e0"
+	                />
+             </LinearLayout>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/snailpay_mobile_sms_text_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="#ff8448"
+                    android:textSize="14sp" />
+
+                <com.snail.pay.view.NoScrollGridView
+                    android:id="@+id/snailpay_mobile_sms_grid_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/snailpay_mobile_sms_text_info"
+                    android:horizontalSpacing="6dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:padding="24dp"
+                    android:verticalSpacing="24dp"
+                    android:gravity="center" >
+                </com.snail.pay.view.NoScrollGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp" >
+
+                <ImageButton
+                    android:id="@+id/snailpay_mobile_sms_image_captcha"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop" />
+
+                <EditText
+                    android:id="@+id/snailpay_mobile_sms_input_captcha"
+                    style="@android:style/Theme.Light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/snailpay_mobile_sms_image_captcha"
+                    android:background="@drawable/snail_green_text_selector"
+                    android:hint="@string/snailpay_please_input_check_code"
+                    android:textColorHint="#e0e0e0"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/snailpay_mobile_sms_text_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:gravity="center"
+                android:textColor="#9b9b9b"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/snailpay_mobile_sms_button_pay"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/snailpay_click_button"
+                android:text="@string/snailpay_recharge_confirm"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+            
+            <TextView
+                android:id="@+id/snailpay_mobile_sms_text_remark"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#949494"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

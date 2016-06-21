@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 17
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+}
+
+dependencies {
+    compile 'com.loopj.android:android-async-http:1.4.4'
+    compile files('libs/snailstore-sdk.jar')
+    compile files('libs/snailpay-sdk.jar')
+    compile files('libs/snailstatisticssdk.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/paybyqqlib.jar')
+    compile files('libs/snail_billing_sdk_20160120001.jar')
+}

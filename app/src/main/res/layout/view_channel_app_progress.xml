@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_download_speed"
+        style="@style/CustomDownloadInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_60dp"
+        android:layout_marginTop="@dimen/dimen_57dp" />
+
+    <TextView
+        android:id="@+id/tv_download_size"
+        style="@style/CustomDownloadInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="@dimen/dimen_98dp"
+        android:layout_marginRight="@dimen/dimen_60dp"
+        android:layout_marginTop="@dimen/dimen_57dp" />
+
+    <ProgressBar
+        android:id="@+id/pb_download_percent"
+        style="@style/CustomProgressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/download_progress_bar_height"
+        android:layout_marginLeft="@dimen/dimen_60dp"
+        android:layout_marginRight="@dimen/dimen_60dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:background="@drawable/detail_progress_pause_bg"
+        android:progressDrawable="@drawable/progress_drawable" />
+
+    <ProgressBar
+        android:id="@+id/loading_for_btn"
+        style="@style/CustomProgressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/download_progress_bar_height"
+        android:layout_marginLeft="@dimen/dimen_98dp"
+        android:layout_marginRight="@dimen/dimen_60dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:background="@drawable/detail_progress_pause_bg"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_control"
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dimen_22dp"
+        android:layout_marginTop="@dimen/dimen_26dp"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/download_state_download_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dimen_22dp"
+        android:layout_marginTop="@dimen/dimen_26dp"
+        android:scaleType="center" />
+</FrameLayout>

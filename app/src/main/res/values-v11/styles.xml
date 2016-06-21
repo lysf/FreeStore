@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="SwipeBackTheme" parent="AppBase">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:dropDownListViewStyle">@style/CustomDropDownListViewStyle</item>
+        <!--<item name="selectableItemBackground">@drawable/ab_btn_selector</item>-->
+        <item name="android:selectableItemBackground">@drawable/ab_btn_selector</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Activity</item>
+    </style>
+
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:progressBarStyle">@android:style/Widget.Holo.ProgressBar</item>
+    </style>
+
+    <style name="ratingBarSmall" parent="android:Widget.Holo.Light.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+        <item name="android:minHeight">14dip</item>
+        <item name="android:maxHeight">14dip</item>
+    </style>
+    <style name="detailRatingBarSmall" parent="android:Widget.Holo.Light.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/detail_ratingbar_drawable</item>
+        <item name="android:minHeight">14dip</item>
+        <item name="android:maxHeight">14dip</item>
+    </style>
+
+
+</resources>

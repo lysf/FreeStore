@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toggle_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_list_item_height"
+        android:background="@drawable/list_item_selector"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp">
+
+        <include
+            android:id="@+id/goods_icon"
+            layout="@layout/simple_image_normal"
+            android:layout_width="@dimen/small_list_item_icon_size"
+            android:layout_height="@dimen/small_list_item_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/item_margin" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/goods_icon"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/general_text_color"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exchange_code"
+                    android:textColor="@color/goods_grey"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_cdkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_little" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_copy"
+                style="@style/CustomBtnStyle"
+                android:layout_width="@dimen/download_btn_width"
+                android:layout_height="@dimen/download_btn_height"
+                android:layout_marginLeft="@dimen/download_btn_margin_left"
+                android:layout_marginRight="@dimen/download_btn_margin_right"
+                android:background="@drawable/btn_blue_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/copy"
+                android:textSize="@dimen/text_size_normal" />
+
+            <ImageView
+                android:id="@+id/goods_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/goods_detail" />
+</LinearLayout>

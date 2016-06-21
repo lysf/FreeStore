@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_plate"
+    android:layout_width="0dp"
+    android:layout_height="32dp"
+    android:layout_gravity="center_vertical"
+    android:layout_weight="1"
+    android:background="@drawable/common_round_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/search_src_text"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:completionThreshold="1"
+        android:dropDownAnchor="@id/search_plate"
+        android:dropDownHeight="wrap_content"
+        android:dropDownWidth="wrap_content"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:hint="@string/search_hint"
+        android:imeActionLabel="Search"
+        android:imeOptions="actionSearch"
+        android:inputType="none"
+        android:paddingLeft="14dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/translucent_50_black"
+        android:textCursorDrawable="@drawable/search_cursor"
+        android:textSize="@dimen/text_size_normal" />
+
+
+    <FrameLayout
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="6dp">
+
+        <ImageView
+            android:id="@+id/search_close_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_clear_selector"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/search_autocomplete_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

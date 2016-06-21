@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_item_selector"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/homeIcon"
+        layout="@layout/simple_image_normal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/homeIconText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:textColor="@color/general_text_color"
+        android:textSize="14sp" />
+
+</LinearLayout>

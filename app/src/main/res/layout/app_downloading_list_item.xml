@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_list_item_height_small"
+    android:background="@drawable/app_list_item_selected"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_8dp"
+    android:paddingRight="@dimen/dimen_8dp">
+
+    <include
+        android:id="@+id/app_logo"
+        layout="@layout/simple_image_normal"
+        android:layout_width="@dimen/item_app_logo_small"
+        android:layout_height="@dimen/item_app_logo_small"
+        android:layout_marginLeft="@dimen/item_app_logo_margin"
+        android:layout_marginRight="@dimen/item_app_logo_margin"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/app_title"
+        style="@style/AppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_toLeftOf="@+id/lv_download_container"
+        android:layout_toRightOf="@id/app_logo"
+        android:text="@string/tv_app_default_name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_download_speed"
+        style="@style/CustomDownloadSpeed"
+        android:layout_below="@id/app_title"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/app_logo"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/tv_download_size"
+        style="@style/CustomDownloadInfo"
+        android:layout_alignBaseline="@id/tv_download_speed"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_download_speed"
+        android:layout_marginRight="@dimen/download_progress_margin_right"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tv_download_speed"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:singleLine="true" />
+
+    <ProgressBar
+        android:id="@+id/pb_download_percent"
+        style="@style/CustomProgressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/download_progress_bar_height"
+        android:layout_below="@id/tv_download_speed"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/lv_download_container"
+        android:layout_toRightOf="@id/app_logo"
+        android:background="@drawable/progress_bg_color"
+        android:progressDrawable="@drawable/progress_drawable" />
+
+
+    <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+
+    <!-- button area -->
+    <LinearLayout
+        android:id="@+id/lv_download_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="top"
+        android:paddingLeft="@dimen/download_btn_margin_left"
+        android:paddingRight="@dimen/download_btn_margin_right">
+
+        <TextView
+            android:id="@id/download_state_download"
+            android:layout_width="@dimen/download_btn_width"
+            android:layout_height="@dimen/download_btn_height"
+            android:background="@drawable/btn_green_selector"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/list_item_download"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/loading_for_btn"
+            android:layout_width="24dp"
+            android:layout_height="@dimen/tips_bg_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

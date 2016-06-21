@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/load_more_listview_gapless"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:listSelector="@drawable/list_item_selector" />
+
+    <RelativeLayout
+        android:id="@+id/forum_post_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/repeat_tab_bg">
+
+
+        <TextView
+            android:id="@+id/tv_post"
+            android:layout_width="@dimen/bottom_btn_state_download_width"
+            android:layout_height="@dimen/bottom_btn_state_download_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_21dp"
+            android:background="@drawable/btn_green_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/forum_post_btn"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_btn_state_download_size" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/tips_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_notopen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingMultiplier="1.1"
+        android:minHeight="40dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_12dp"
+        android:paddingTop="@dimen/dimen_12dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_open_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_get"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:lineSpacingMultiplier="1.1"
+        android:minHeight="40dp"
+        android:padding="@dimen/dimen_10dp"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <com.snailgame.cjg.common.widget.LoadMoreListView
+        android:id="@+id/lv_privilege_awards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:clickable="false"
+        android:divider="@color/gray"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <TextView
+        android:id="@+id/btn_open"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/btn_scan_ok_selector"
+        android:gravity="center"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

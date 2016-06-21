@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_12dp"
+    android:paddingTop="@dimen/dimen_12dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/search_guess_header_title"
+        android:drawableLeft="@drawable/activate_privilege_fail"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_24dp"
+        android:textSize="18sp"
+        android:textColor="@color/common_oval_red"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/search_guess_header_content"
+        android:textSize="14sp"
+        android:textColor="@color/search_active_item_subtitle_color" />
+</RelativeLayout>

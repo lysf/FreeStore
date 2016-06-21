@@ -1,0 +1,11 @@
+.idea
+build
+*.iml
+gen
+out
+.gradle
+target
+local.properties
+.DS_Store
+*.apk
+*.txt

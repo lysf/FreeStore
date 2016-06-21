@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_16dp"
+    android:gravity="center">
+    <com.snailgame.cjg.guide.widget.TimerCountdownView
+        android:id="@+id/timer_count_down"
+        android:visibility="invisible"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/tv_time_countdown"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

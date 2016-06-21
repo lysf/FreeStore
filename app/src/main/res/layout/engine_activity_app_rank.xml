@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.snailgame.cjg.common.widget.PagerSlidingTabStrip xmlns:pslts="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pager_tab_height"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:fillViewport="false"
+        pslts:pstsIndicatorColor="@color/red"
+        pslts:pstsIndicatorHeight="3dp"
+        pslts:pstsShowDivider="false"
+        pslts:pstsShowIndicatorBmp="false"
+        pslts:pstsTitleDefaultColor="@color/general_text_color"
+        pslts:pstsTitleSelColor="@color/red" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

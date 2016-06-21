@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <third.com.snail.trafficmonitor.ui.widget.ScrollBackListView
+            android:id="@+id/list_view"
+            android:listSelector="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/no_data_tv"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:gravity="center"
+                tools:text="当前无法统计到任何的移动流量信息"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+</FrameLayout>

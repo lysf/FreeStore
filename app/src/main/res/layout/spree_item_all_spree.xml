@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spree_item_height"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/iv_spree_logo"
+            layout="@layout/simple_image_normal"
+            android:layout_width="@dimen/item_app_logo"
+            android:layout_height="@dimen/item_app_logo"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="@dimen/item_app_logo_margin"
+            android:layout_marginTop="14dp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_app_logo"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                style="@style/AppTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_spree_title"
+                style="@style/AppVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_cd_key"
+                android:layout_alignLeft="@id/tv_cd_key"
+                android:layout_below="@id/tv_app_name"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_cd_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:textColor="@color/general_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/btn_spree"
+            style="@style/CustomBtnStyle"
+            android:layout_width="@dimen/download_btn_width"
+            android:layout_height="@dimen/download_btn_height"
+            android:layout_marginLeft="@dimen/download_btn_margin_left"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_exchange_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/not_get"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_spree_content"
+        style="@style/AppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_container"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-2dp"
+        android:lineSpacingMultiplier="1.2" />
+
+    <include
+        layout="@layout/common_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp" />
+
+</RelativeLayout>

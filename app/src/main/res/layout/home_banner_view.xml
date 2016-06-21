@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snailgame.cjg.common.widget.FSSimpleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image_view"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:scaleType="fitXY"
+    fresco:overlayImage="@drawable/ab_btn_selector"
+    fresco:placeholderImage="@drawable/banner_loading"
+    fresco:placeholderImageScaleType="fitCenter" />

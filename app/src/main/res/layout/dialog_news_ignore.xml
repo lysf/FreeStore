@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlOutsideBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent_15_black">
+
+
+    <RelativeLayout
+        android:id="@+id/rlParentForAnimate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/news_ignore_dialog_bg"
+            android:clickable="true"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/title_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_choose_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="请选择不感兴趣的理由"
+                        android:textColor="@color/primary_text_color" />
+                    <TextView
+                        android:id="@+id/tv_choose_tip"
+                        android:layout_marginTop="@dimen/dimen_6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="@string/news_dialog_tip"
+                        android:textColor="@color/general_text_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_sure"
+                    android:layout_width="74dp"
+                    android:layout_height="26dp"
+                    android:minHeight="@dimen/dimen_32dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_red_selector"
+                    android:gravity="center"
+                    android:text="@string/btn_sure"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/title_container"
+                layout="@layout/common_horizontal_line" />
+
+            <com.snailgame.cjg.news.widget.flowlayout.TagFlowLayout
+                android:id="@+id/gv_ignore_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_line"
+                android:paddingTop="@dimen/dimen_18dp"
+                android:paddingLeft="@dimen/dimen_16dp"
+                android:paddingRight="@dimen/dimen_16dp"
+                zhy:max_select="-1"
+                zhyauto_select_effect="false"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

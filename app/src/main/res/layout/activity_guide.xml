@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.snailgame.cjg.guide.widget.GuideViewpager
+        android:id="@+id/guideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <third.viewpagerindicator.CirclePageIndicatorCompat
+        android:id="@+id/guideCirclePageIndicator"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.snailgame.cjg.personal.widget.SlidingScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red_light"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/not_login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_180dp"
+                android:background="@drawable/user_center_top_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_share_avatar_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/not_login"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/login_and_get_more_info"
+                    android:textColor="@color/translucent_80_white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userinfo_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/personal_user_info_layout_height_large"
+                android:background="@drawable/user_center_top_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/layout_avata"
+                    android:layout_width="72dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp">
+
+                    <include
+                        android:id="@+id/imageMenuAvatar"
+                        layout="@layout/simple_avatar_image_personal"
+                        android:layout_width="68dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center" />
+
+                    <include
+                        android:id="@+id/imageMenuAvatar_bg"
+                        layout="@layout/simple_image"
+                        android:layout_width="72dp"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/tv_level"
+                        android:layout_width="@dimen/dimen_40dp"
+                        android:layout_height="@dimen/dimen_14dp"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginBottom="@dimen/dimen_9dp"
+                        android:background="@drawable/user_center_level_bg"
+                        android:gravity="center"
+                        android:textColor="@color/level_text_color"
+                        android:textSize="@dimen/discount"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_account_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/tv_account_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_personal_composition"
+                        android:layout_width="@dimen/dimen_26dp"
+                        android:layout_height="@dimen/dimen_14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_6dp"
+                        android:layout_toRightOf="@+id/ll_account_name"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="@string/personal_composition"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_personal_levelname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ab_btn_selector"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textColor="@color/translucent_80_white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_wallet_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/list_item_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:background="@drawable/personal_my_wallet" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:layout_weight="1"
+                android:text="@string/persional_my_wallet"
+                android:textColor="@color/primary_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/my_wallet_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:drawableRight="@drawable/ic_more"
+                android:text="@string/personal_my_wallet_footer"
+                android:textColor="@color/general_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <include layout="@layout/common_horizontal_line" />
+
+        <include layout="@layout/account_info_layout" />
+
+        <com.snailgame.cjg.common.widget.FullGridView
+            android:id="@+id/item_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:horizontalSpacing="@dimen/divider_height"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/divider_height" />
+    </LinearLayout>
+</com.snailgame.cjg.personal.widget.SlidingScrollView>

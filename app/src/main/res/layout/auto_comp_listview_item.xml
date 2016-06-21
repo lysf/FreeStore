@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        >
+
+    <ImageView
+        android:id="@+id/searchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_tips"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        />
+
+
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textSize="@dimen/text_size_normal"
+            android:lines="1"
+            android:paddingLeft="12dp"
+            android:maxEms="12"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+        android:layout_toRightOf="@id/searchIcon"
+            />
+
+    <ImageView
+        android:id="@+id/search_history_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/search_history_plus"
+        />
+
+</RelativeLayout>

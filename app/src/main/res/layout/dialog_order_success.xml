@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/tips_dialog_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dialog_top_top_margin"
+        android:src="@drawable/ic_order_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dialog_content_between_margin"
+        android:text="@string/order_success"
+        android:textColor="@color/green"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dialog_content_bottom_margin"
+        android:layout_marginTop="@dimen/dialog_content_between_margin"
+        android:text="@string/wait_your_order"
+        android:textColor="@color/wait_order_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/order_success_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:layout_marginBottom="@dimen/dialog_bottom_bottom_margin"
+        android:layout_marginLeft="@dimen/dialog_sides_margin"
+        android:layout_marginRight="@dimen/dialog_sides_margin"
+        android:background="@drawable/btn_scan_ok_selector"
+        android:gravity="center"
+        android:text="@string/i_know"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

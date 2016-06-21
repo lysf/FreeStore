@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:longClickable="false"
+    android:paddingBottom="12dp">
+
+    <LinearLayout
+        android:id="@+id/lv_voucher_amount_container"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/voucher_cooper_header_quan_right_bg"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yuan_char"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <com.snailgame.cjg.common.widget.MagicTextView
+            android:id="@+id/tv_voucher_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@id/lv_voucher_amount_container"
+        android:background="@drawable/voucher_cooper_spliter" />
+
+    <RelativeLayout
+        android:id="@+id/rl_voucher_cooper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@id/lv_voucher_amount_container"
+        android:background="@drawable/voucher_cooper_header_quan_left_bg">
+
+        <RelativeLayout
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/lv_voucher_icon"
+            android:background="@drawable/voucher_cooper_header_ic_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:src="@drawable/voucher_cooper_header_ic" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/lv_voucher_icon"
+            android:gravity="center_vertical|left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_voucher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_voucher_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/translucent_60_white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_voucher_validity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_alignRight="@+id/lv_voucher_amount_container"
+        android:layout_below="@+id/lv_voucher_amount_container"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_little" />
+
+    <RelativeLayout
+        android:id="@+id/rl_voucher_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_voucher_cooper_bg"
+        android:layout_marginTop="35dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/voucher_cooper_total"
+                android:textSize="14sp"
+                android:textColor="@color/translucent_50_white" />
+
+            <TextView
+                android:id="@+id/tv_voucher_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/voucher_cooper_used"
+                android:textSize="14sp"
+                android:textColor="@color/translucent_50_white" />
+
+            <TextView
+                android:id="@+id/tv_voucher_used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/voucher_cooper_available"
+                android:textSize="14sp"
+                android:textColor="@color/translucent_50_white" />
+
+            <TextView
+                android:id="@+id/tv_voucher_avilable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

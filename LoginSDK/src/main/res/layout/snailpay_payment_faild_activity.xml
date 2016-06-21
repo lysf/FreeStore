@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/snailpay_title_layout" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/snailpay_payment_ok" />
+
+    <TextView
+        android:id="@+id/snailpay_payment_faild_text_congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff363f"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="@string/snailpay_faild" />
+
+    <LinearLayout
+        android:id="@+id/snailpay_payment_faild_info_layout"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginLeft="40dp"
+    	android:layout_marginRight="40dp">
+    
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/snailpay_payment_xin"
+	        android:layout_gravity="center_vertical" />
+	        
+	    <TextView
+	        android:id="@+id/snailpay_payment_faild_text_info_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:textColor="#6dc343"
+	        android:text="@string/snailpay_reminder"
+	        android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/snailpay_payment_faild_text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+    	android:layout_marginRight="40dp"
+        android:textColor="#9b9b9b" />
+
+        <Button
+            android:id="@+id/snailpay_payment_faild_button_ok"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/snailpay_click_button"
+            android:textColor="#ffffff" />
+
+</LinearLayout>

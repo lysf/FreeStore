@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:background="@drawable/tips_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="@string/free_store_recomment"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <include
+            android:id="@+id/dialog_activity_banner"
+            layout="@layout/simple_image_normal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:layout_below="@id/title"
+            android:clickable="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/activity_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_activity_banner"
+            android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="9"
+            android:minHeight="37dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/activity_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/dialog_activity_banner"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:minHeight="37dp"
+            android:textColor="@color/general_text_color"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/close_dialog_selector" />
+
+</RelativeLayout>

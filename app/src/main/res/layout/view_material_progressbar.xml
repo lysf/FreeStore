@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center|bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/material_progress_bar_bg"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dimen_40dp"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/dimen_60dp">
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progressBar"
+            app:mlpb_enable_circle_background="false"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:mlpb_progress_color="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="加载中..."/>
+    </LinearLayout>
+</LinearLayout>

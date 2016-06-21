@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_top_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_banner_scrollview_include" />
+
+    <com.snailgame.cjg.common.widget.FullGridView
+        android:id="@+id/quickEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:verticalSpacing="-14dp"
+        android:clickable="true"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/quick_enter_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/translucent_15_black"
+        android:visibility="gone" />
+
+    <include layout="@layout/home_modul_divider" />
+</LinearLayout>

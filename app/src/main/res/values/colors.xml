@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--定义drawable-->
+    <drawable name="search_item_text_bg_pressed">#d9d9d9</drawable>
+    <drawable name="search_item_text_bg_formal">@color/white</drawable>
+    <drawable name="transparent">@color/translucent_full</drawable>
+    <drawable name="loading_ico_color">@color/search_auto_complete_item_pressed_color</drawable>
+
+    <!--定义颜色-->
+    <color name="red">#eb413d</color>
+    <color name="red_light">#fb5052</color>
+    <color name="black_light">#4a4a4a</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#6dc343</color>
+    <color name="black">#000000</color>
+
+    <color name="app_tag_one">#18d4d6</color>
+    <color name="app_tag_two">#17d67f</color>
+    <color name="app_tag_three">#cb1bd1</color>
+    #
+    <!-- 半透明 -->
+    <color name="translucent">#50000000</color>
+    <color name="translucent_full">#00000000</color>
+    <color name="translucent_15_black">#26000000</color>
+    <color name="translucent_90_white">#e5ffffff</color>
+    <color name="translucent_80_white">#bbffffff</color>
+    <color name="translucent_70_white">#a2ffffff</color>
+    <color name="translucent_50_white">#80ffffff</color>
+    <color name="translucent_30_white">#4cffffff</color>
+    <color name="translucent_60_white">#99ffffff</color>
+    <color name="translucent_30_black">#43000000</color>
+    <color name="translucent_20_black">#33000000</color>
+    <color name="translucent_50_black">#80000000</color>
+    <color name="translucent_75_black">#bf000000</color>
+    <color name="translucent_green">#e9f1e4</color>
+    <!--Text-->
+    <color name="primary_text_color">#333333</color>
+    <color name="general_text_color">#979797</color>
+    <color name="second_text_color">#666666</color>
+    <color name="invaild_text_color">#c1c1c6</color>
+
+    <!-- 按钮-->
+    <color name="btn_green_normal">#4dbd21</color>
+    <color name="btn_green_click">#45aa1e</color>
+    <color name="btn_red_normal">#eb413d</color>
+    <color name="btn_red_click">#d92e36</color>
+    <color name="btn_blue_normal">#33baf3</color>
+    <color name="btn_blue_click">#2b9ecf</color>
+    <color name="btn_gray_normal">#979797</color>
+    <color name="btn_gray_click">#757575</color>
+    <color name="btn_yellow_normal">#f6a545</color>
+    <color name="btn_yellow_click">#dd943e</color>
+
+    <!--模块底色-->
+    <color name="common_window_bg">#f2f2f2</color>
+    <color name="common_line_color">#dedede</color>
+
+
+    <color name="download_pressed">#fbd571</color>
+
+    <color name="drop_down_color">#d6d6d6</color>
+    <color name="download_manage_item_version">#9b9b9b</color>
+
+
+    <!-- Scan QR code -->
+    <color name="result_view">#b0000000</color>
+
+    <color name="view_pager_title_bg">#d4dae2</color>
+    <color name="actionbar_title_color">#ffdddd</color>
+
+    <color name="common_nor_list_item_bg">@color/white</color>
+
+    <color name="common_app_list_item_green">#55c45f</color>
+    <color name="progress_bg_color">#f2f2f2</color>
+
+    <!--divider-->
+    <color name="detail_progress_bar_bg">#72d289</color>
+    <color name="search_auto_complete_item_pressed_color">#dddddd</color>
+    <color name="common_oval_red">#FC5353</color>
+
+    <!-- 搜索关键字随机颜色 -->
+    <color name="keyword_color_blue">#53cefc</color>
+    <!-- content_frame-->
+
+    <!--流量统计-->
+    <color name="green_light">#6cca76</color>
+
+    <!--我的物品-->
+    <color name="child_text_color">#636363</color>
+    <color name="gray_text">#373737</color>
+    <color name="goods_grey">#aab0bd</color>
+    <color name="detail_progress_pause_bg">#bfbfbf</color>
+
+
+    <!--appmsg_colors-->
+    <color name="alert">#CC0000</color>
+
+    <color name="phone_num_not_found_divider">#e1e6ea</color>
+
+    <color name="detail_about">#39ade9</color>
+    <color name="detail_upgrade">#ffae00</color>
+    <color name="detail_recomment">#847eff</color>
+
+    <!-- 45% 透明-->
+    <color name="personal_dialog_bg">#f2e5e5e5</color>
+    <color name="personal_dialog_line">#b1b1b1</color>
+    <color name="personal_nickname_color">#ffffff</color>
+
+    <!--member-->
+    <color name="member_call_wave">#ff3bdb51</color>
+    <color name="member_privilege_bg">#f03750</color>
+    <color name="member_game_play_dies">#fe784b</color>
+    <drawable name="member_privilege_bg">@color/member_privilege_bg</drawable>
+
+
+    <color name="score_exchange_footer">#b4b4b4</color>
+    <color name="currency_hisotry_item_title">#4c4c4c</color>
+    <color name="transparent_cover">#1e000000</color>
+
+
+    <color name="bg_app_detail">#fdfdfd</color>
+    <color name="detail_sactionbar_title_color">#fb4f53</color>
+    <color name="detail_actionbar_title_color">#212121</color>
+
+    <color name="input_text_color">#e1e1e1</color>
+    <color name="discondition_normal">#848894</color>
+    <color name="discondition_clicked">#70747e</color>
+    <color name="download_text_color">#6dc343</color>
+
+    <color name="indicator_yellow">#FFEA00</color>
+    <color name="score_exchange_success">#FF4EC76A</color>
+    <color name="score_exchange_failed">#FFFE373E</color>
+    <color name="desk_game_bg">#f7f7f7</color>
+    <color name="gray">#b7b7b7</color>
+    <!-- 新手卡相关 -->
+    <color name="novicecard_dialog_list_header">#ff8d8d8d</color>
+    <color name="menu_sub_title_color">#c6c6c6</color>
+    <color name="copy_right_color">#9e9e9e</color>
+    <color name="about_title_color">#fb5052</color>
+    <color name="appinfo_flow_free_color">#7F000000</color>
+    <color name="lvitem_tv_money">#399A00</color>
+    <color name="goods_subtitle_color">#606060</color>
+    <color name="pic_source_text_color">#575757</color>
+    <color name="score_wall_loading_color">#808080</color>
+    <color name="splash_free_tips_color">#7b8591</color>
+    <color name="splash_copy_right_color">#a0a0a0</color>
+
+
+    <!--应用卡片颜色-->
+    <color name="list_item_pressed_color">#ececec</color>
+
+
+    <color name="comment_text">#ff6600</color>
+    <!-- 搜索 -->
+    <color name="search_history_hot_title_color">#7b7b7b</color>
+    <color name="search_result_header_color">#818181</color>
+    <color name="search_active_item_subtitle_color">#707070</color>
+    <color name="search_kuwan_item_preprice_color">#a8a8a8</color>
+
+    <color name="go_home_btn_color">#ff5959</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- Engine -->
+    <!--    <color name="red">#fc2e2f</color>
+        <color name="black">#212121</color>
+        <color name="white">#f2f2f2</color>
+        <color name="gray">#dbdbdb</color>-->
+    <color name="black_r">#ff000000</color>
+    <color name="background_progress_bar">#dbdbdb</color>
+    <color name="progress_bar_s">#fc5353</color>
+    <color name="progress_bar_green">#6dc343</color>
+    <color name="text_gray">#7b7b7b</color>
+    <color name="text_gray_light">#949494</color>
+    <color name="chart_wifi_green">#6ac44f</color>
+    <color name="chart_mobile_red">#fc5252</color>
+    <color name="chart_background">#f7f7f7</color>
+    <color name="progress_text_gray">#acacac</color>
+    <!--
+        <color name="translucent_full">#00000000</color>
+        <color name="translucent_15_black">#26000000</color>
+
+        <color name="actionbar_title_color">#ffdddd</color>-->
+    <color name="list_view_divider_color">#7b212121</color>
+    <!--个人中心-->
+    <color name="copy_text_color">#57b2ea</color>
+    <color name="score_color">#f7bb5d</color>
+    <color name="person_privilege_list_item_subtitle">#555555</color>
+    <color name="color_ffeeee">#ffeeee</color>
+    <color name="level_text_color">#92510a</color>
+    <color name="level_text_bg__color">#ffcc03</color>
+    <!-- Theme -->
+    <color name="theme_color_primary">@color/B_black</color>
+    <color name="theme_color_primary_dark">#d64546</color>
+    <color name="rank_filter_type_color">#a3a3a3</color>
+    <color name="wait_order_color">#a1a1a1</color>
+
+    <color name="ad_broadcast_color">#20b7a9</color>
+    <color name="translucent_10_white">#19ffffff</color>
+
+    <color name="voucher_desc_color">#666666</color>
+    <color name="voucher_deadline_color">#999999</color>
+    <color name="voucher_detail_item_color">#7f7f7f</color>
+    <color name="detail_actionbar_color">#fffffe</color>
+    <color name="translucent_70_black">#a3000000</color>
+    <color name="translucent_40_black">#66000000</color>
+
+    <!--notification-->
+    <color name="big_notification_bg_color">#1a1a1a</color>
+    <color name="get_ver_code_bg">#d8d8d8</color>
+    <color name="bind_phone_agreement_color">#9d9d9d</color>
+    <color name="notification_center_item_title_color">#333333</color>
+    <color name="notification_center_item_time_color">#979797</color>
+    <color name="notification_center_item_content_color">#666666</color>
+
+    <!--manage-->
+    <color name="manage_score_low">#eb413d</color>
+    <color name="manage_score_normal">#bcbccb</color>
+    <color name="manage_score_high">#4dbd21</color>
+    <color name="divider_color">#dedede</color>
+    <color name="people_num_color">#4dbd21</color>
+    <color name="have_updated_color">#979797</color>
+    <color name="instead_charge_border_color">#fd9898</color>
+    <color name="go_home_btn_border_color">#ff5959</color>
+
+    <color name="news_readed_color">#8e8e8e</color>
+    <color name="friend_des_color">#b8b8b8</color>
+    <color name="color_009bfe">#009bfe</color>
+    <color name="color_17ce8b">#17ce8b</color>
+    <color name="color_ff9a23">#ff9a23</color>
+    <color name="color_13bfde">#13bfde</color>
+</resources>

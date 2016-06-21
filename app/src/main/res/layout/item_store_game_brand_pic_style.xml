@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_18dp"
+    android:paddingLeft="@dimen/dimen_16dp"
+    android:paddingRight="@dimen/dimen_16dp"
+    android:paddingTop="@dimen/dimen_18dp"
+    android:background="@drawable/list_item_selector">
+
+    <include
+        android:id="@+id/game_brand_pic"
+        layout="@layout/simple_image_normal_overlay_roundcorner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_brand_pic"
+        android:layout_marginTop="8dp"
+        android:lines="2"
+        android:textColor="@color/primary_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_price_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/game_brand_icon"
+        android:text="@string/yuan_char"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/tv_price_header"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:text="139.00"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/tv_price"
+        android:background="@drawable/goods_message_h"
+        android:textColor="@color/red"
+        android:paddingLeft="10dp"
+        android:paddingRight="6dp"
+        android:textSize="@dimen/discount"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/tv_discounts"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_16dp"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/tv_member"
+        android:background="@drawable/goods_message_h"
+        android:textColor="@color/red"
+        android:paddingLeft="10dp"
+        android:paddingRight="6dp"
+        android:textSize="@dimen/discount"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/tv_ordinary_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_price"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:textColor="@color/general_text_color"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_sock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/general_text_color"
+        android:textSize="12sp"
+        />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ab_btn_selector_normal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/search_item_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_history_item_height"
+        android:drawableLeft="@drawable/search_history_indicate"
+        android:drawablePadding="@dimen/app_search_gird_margin_left"
+        android:drawableStart="@drawable/search_history_indicate"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+
+</RelativeLayout>
